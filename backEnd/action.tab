@@ -1,0 +1,39 @@
+ActionID	Content	Attr	StepID	
+1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	0312	1.000000	3	2)	2
+15	showCode(1)	Code	2
+16	changeNodeColor(0,RGB(255,0,0))	Animation	2
+17	showHelp(访问找到的结点)	Help	2
+18	Question(1	下一个要访问的结点是？	*2*	0.100000	3	2)	3
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	3
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	3
+21	showCode(2)	Code	3
+22	showCode(1)	Code	4
+23	changeNodeColor(2,RGB(255,0,0))	Animation	4
+24	showHelp(访问找到的结点)	Help	4
+25	Question(1	下一个要访问的结点是？	*3*	0.100000	3	2)	5
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	5
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+28	showCode(2)	Code	5
+29	showCode(1)	Code	6
+30	changeNodeColor(3,RGB(255,0,0))	Animation	6
+31	showHelp(访问找到的结点)	Help	6
+32	Question(1	下一个要访问的结点是？	*1*	0.100000	3	2)	7
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	7
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	7
+35	showCode(2)	Code	7
+36	showCode(1)	Code	8
+37	changeNodeColor(1,RGB(255,0,0))	Animation	8
+38	showHelp(访问找到的结点)	Help	8

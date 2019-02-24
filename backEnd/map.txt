@@ -1,0 +1,20 @@
+{
+"name":"аз╫с╠М","node":[
+ { "nodeInfo":"0 *0*"
+"adjNodes":{
+"adjnodeInfo": ["2 *2*", "3 *3*"]
+}
+} ,  { "nodeInfo":"1 *1*"
+"adjNodes":{
+"adjnodeInfo": ["3 *3*"]
+}
+} ,  { "nodeInfo":"2 *2*"
+"adjNodes":{
+"adjnodeInfo": ["0 *0*", "3 *3*"]
+}
+} ,  { "nodeInfo":"3 *3*"
+"adjNodes":{
+"adjnodeInfo": ["0 *0*", "1 *1*", "2 *2*"]
+}
+}]
+}

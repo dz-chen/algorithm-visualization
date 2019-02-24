@@ -1,0 +1,4 @@
+ModuleID	Name	info	ArithmeticID
+1	初始化图	现实整个图	4
+2	访问结点	访问该结点并在visited数组中记录已经访问该点	4
+3	寻找节点	寻找首个未被访问的邻接节点邻接点	4
