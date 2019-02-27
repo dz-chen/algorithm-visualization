@@ -14952,3 +14952,1002 @@
 [2019-02-23T23:24:29.362] [INFO] LOG - [master] listening : worker:2, pid:16557, address:null, port:3001
 [2019-02-23T23:24:29.403] [INFO] LOG - [worker] worker start : 4
 [2019-02-23T23:24:29.408] [INFO] LOG - [master] listening : worker:4, pid:16567, address:null, port:3001
+[2019-02-27T19:43:44.304] [INFO] LOG - *********************************
+[2019-02-27T19:43:44.311] [INFO] LOG - [START] multi process
+[2019-02-27T19:43:44.311] [INFO] LOG - [matser] master start
+[2019-02-27T19:43:45.288] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:43:45.304] [INFO] LOG - [master] listening : worker:1, pid:6069, address:null, port:3001
+[2019-02-27T19:43:45.308] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:43:45.312] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:43:45.314] [INFO] LOG - [master] listening : worker:4, pid:6076, address:null, port:3001
+[2019-02-27T19:43:45.320] [INFO] LOG - [master] listening : worker:3, pid:6071, address:null, port:3001
+[2019-02-27T19:43:45.334] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:43:45.339] [INFO] LOG - [master] listening : worker:2, pid:6070, address:null, port:3001
+[2019-02-27T19:45:31.257] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1873.5]]
+[2019-02-27T19:45:31.257] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T19:45:31.257] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T19:45:31.257] [INFO] LOG - *0*
+[2019-02-27T19:45:31.257] [INFO] LOG - *1*
+[2019-02-27T19:45:31.257] [INFO] LOG - dijkstra
+[2019-02-27T19:45:31.294] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/data/123456/  *0*
+[2019-02-27T19:45:31.310] [INFO] LOG - exec error: /bin/sh: /home/cdz/Code/FrontEnd/algorithm: No such file or directory
+
+[2019-02-27T19:45:31.311] [ERROR] LOG - ERROR Error: error
+    at exec (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/routes/index.js:124:16)
+    at ChildProcess.exithandler (child_process.js:282:5)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Socket.stream.socket.on (internal/child_process.js:346:11)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at Pipe._handle.close [as _onclose] (net.js:567:12)
+[2019-02-27T19:45:31.885] [INFO] LOG - ::1 - POST /data HTTP/1.1 500 654 - 569.307 ms
+
+[2019-02-27T19:49:48.863] [ERROR] LOG - ERROR { Error: Cannot find module '../encodings'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.getCodec (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/raw-body/node_modules/iconv-lite/lib/index.js:65:27)
+    at Object.getDecoder (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/raw-body/node_modules/iconv-lite/lib/index.js:127:23)
+    at getDecoder (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/raw-body/index.js:45:18)
+    at readStream (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/raw-body/index.js:180:15)
+    at getRawBody (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/raw-body/index.js:108:12)
+    at read (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/body-parser/lib/read.js:77:3)
+  code: 'MODULE_NOT_FOUND',
+  expose: true,
+  statusCode: 400,
+  status: 400 }
+[2019-02-27T19:49:48.867] [FATAL] LOG - ERROR UNCAUTCH { Error: Cannot find module './lib/encoding'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at loadModule (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/negotiator/index.js:108:16)
+    at Negotiator.encodings (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/negotiator/index.js:56:28)
+    at Accepts.encoding.Accepts.encodings (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/accepts/index.js:143:26)
+    at ServerResponse.onResponseHeaders (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/compression/index.js:178:27)
+    at ServerResponse.writeHead (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/on-headers/index.js:46:16)
+    at ServerResponse.writeHead (/home/cdz/Code/FrontEnd/algorithm visualization for Mr Huang/backEnd/node_modules/on-headers/index.js:55:19) code: 'MODULE_NOT_FOUND' }
+[2019-02-27T19:51:06.151] [INFO] LOG - *********************************
+[2019-02-27T19:51:06.155] [INFO] LOG - [START] multi process
+[2019-02-27T19:51:06.155] [INFO] LOG - [matser] master start
+[2019-02-27T19:51:07.217] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:51:07.230] [INFO] LOG - [master] listening : worker:3, pid:7034, address:null, port:3001
+[2019-02-27T19:51:07.236] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:51:07.244] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:51:07.256] [INFO] LOG - [master] listening : worker:2, pid:7029, address:null, port:3001
+[2019-02-27T19:51:07.260] [INFO] LOG - [master] listening : worker:1, pid:7028, address:null, port:3001
+[2019-02-27T19:51:07.345] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:51:07.351] [INFO] LOG - [master] listening : worker:4, pid:7039, address:null, port:3001
+[2019-02-27T19:52:44.859] [INFO] LOG - *********************************
+[2019-02-27T19:52:44.865] [INFO] LOG - [START] multi process
+[2019-02-27T19:52:44.865] [INFO] LOG - [matser] master start
+[2019-02-27T19:52:46.280] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:52:46.303] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:52:46.451] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:52:46.467] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:52:46.471] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:52:46.485] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:52:46.497] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:52:46.504] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:53:35.548] [INFO] LOG - *********************************
+[2019-02-27T19:53:35.553] [INFO] LOG - [START] multi process
+[2019-02-27T19:53:35.553] [INFO] LOG - [matser] master start
+[2019-02-27T19:53:36.533] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:53:36.538] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:53:36.548] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:53:36.553] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:53:36.562] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:53:36.565] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:53:36.568] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:53:36.572] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:54:57.980] [INFO] LOG - *********************************
+[2019-02-27T19:54:57.985] [INFO] LOG - [START] multi process
+[2019-02-27T19:54:57.986] [INFO] LOG - [matser] master start
+[2019-02-27T19:54:58.956] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:54:58.961] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:54:58.970] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:54:58.981] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:54:58.983] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:54:58.990] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:54:59.019] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:54:59.024] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:55:09.683] [INFO] LOG - *********************************
+[2019-02-27T19:55:09.688] [INFO] LOG - [START] multi process
+[2019-02-27T19:55:09.689] [INFO] LOG - [matser] master start
+[2019-02-27T19:55:10.668] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:55:10.669] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:55:10.671] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:55:10.684] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:55:10.684] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:55:10.685] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:55:10.724] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:55:10.728] [FATAL] LOG - ERROR UNCAUTCH { Error: bind EADDRINUSE null:3001
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at listenOnMasterHandle (net.js:1427:16)
+    at rr (internal/cluster/child.js:121:12)
+    at Worker.send (internal/cluster/child.js:88:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'bind',
+  address: null,
+  port: 3001 }
+[2019-02-27T19:59:03.672] [INFO] LOG - *********************************
+[2019-02-27T19:59:03.677] [INFO] LOG - [START] multi process
+[2019-02-27T19:59:03.677] [INFO] LOG - [matser] master start
+[2019-02-27T19:59:04.639] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T19:59:04.653] [INFO] LOG - [master] listening : worker:1, pid:7912, address:null, port:3001
+[2019-02-27T19:59:04.663] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T19:59:04.671] [INFO] LOG - [master] listening : worker:3, pid:7914, address:null, port:3001
+[2019-02-27T19:59:04.682] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T19:59:04.684] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T19:59:04.691] [INFO] LOG - [master] listening : worker:4, pid:7919, address:null, port:3001
+[2019-02-27T19:59:04.695] [INFO] LOG - [master] listening : worker:2, pid:7913, address:null, port:3001
+[2019-02-27T19:59:54.949] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1873.5]]
+[2019-02-27T19:59:54.949] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T19:59:54.949] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T19:59:54.949] [INFO] LOG - *0*
+[2019-02-27T19:59:54.950] [INFO] LOG - *1*
+[2019-02-27T19:59:54.950] [INFO] LOG - dijkstra
+[2019-02-27T19:59:54.985] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T19:59:55.003] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1873.5)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1873.5)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	下次循环加入的点是？	*3*	0.1	3	2)	4
+32	showHelp(加入距离起点最近的点)	Help	5
+33	changeNodeColor(2,RGB(255,0,0))	Animation	5
+34	showHelp(加入边)	Help	6
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+36	showCode(3)	Code	7
+37	showHelp(比较距离)	Help	7
+38	showInequality(0,826.1+826.1≥0)	Attribute	7
+39	showInequality(1,826.1+999999≥999999)	Attribute	7
+40	showInequality(2,826.1+999999≥826.1)	Attribute	7
+41	showInequality(3,826.1+1873.5≥1950.3)	Attribute	7
+42	showHelp(更新到起点的距离)	Help	8
+43	showHelp(本次循环结束)	Help	9
+44	InequalityDisapper(0,xxxxxx)	Attribute	9
+45	InequalityDisapper(1,xxxxxx)	Attribute	9
+46	InequalityDisapper(2,xxxxxx)	Attribute	9
+47	InequalityDisapper(3,xxxxxx)	Attribute	9
+48	Question(1	下次循环加入的点是？	*1*	0.1	3	2)	10
+49	showHelp(加入距离起点最近的点)	Help	11
+50	changeNodeColor(3,RGB(255,0,0))	Animation	11
+51	showHelp(加入边)	Help	12
+52	changeEdgeColor(0,3,RGB(255,0,0))	Animation	12
+53	showCode(3)	Code	13
+54	showHelp(比较距离)	Help	13
+55	showInequality(0,1950.3+1950.3≥0)	Attribute	13
+56	showInequality(1,1950.3+839<999999)	Attribute	13
+57	showInequality(2,1950.3+1873.5≥826.1)	Attribute	13
+58	showInequality(3,1950.3+999999≥1950.3)	Attribute	13
+59	showHelp(更新到起点的距离)	Help	14
+60	changeNodeDist(1,2789.3)	Animation	14
+61	showHelp(本次循环结束)	Help	15
+62	InequalityDisapper(0,xxxxxx)	Attribute	15
+63	InequalityDisapper(1,xxxxxx)	Attribute	15
+64	InequalityDisapper(2,xxxxxx)	Attribute	15
+65	InequalityDisapper(3,xxxxxx)	Attribute	15
+66	showHelp(加入距离起点最近的点)	Help	16
+67	changeNodeColor(1,RGB(255,0,0))	Animation	16
+68	showHelp(加入边)	Help	17
+69	changeEdgeColor(3,1,RGB(255,0,0))	Animation	17
+70	showCode(3)	Code	18
+71	showHelp(比较距离)	Help	18
+72	showInequality(0,2789.3+999999≥0)	Attribute	18
+73	showInequality(1,2789.3+999999≥2789.3)	Attribute	18
+74	showInequality(2,2789.3+999999≥826.1)	Attribute	18
+75	showInequality(3,2789.3+839≥1950.3)	Attribute	18
+76	showHelp(更新到起点的距离)	Help	19
+77	showHelp(本次循环结束)	Help	20
+78	InequalityDisapper(0,xxxxxx)	Attribute	20
+79	InequalityDisapper(1,xxxxxx)	Attribute	20
+80	InequalityDisapper(2,xxxxxx)	Attribute	20
+81	InequalityDisapper(3,xxxxxx)	Attribute	20
+82	showHelp(算法结束)	Help	21
+
+[2019-02-27T19:59:55.083] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 84.384 ms
+
+[2019-02-27T20:00:10.386] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 24.674 ms
+
+[2019-02-27T20:00:30.952] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 25.366 ms
+
+[2019-02-27T20:00:38.895] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 26.021 ms
+
+[2019-02-27T20:05:48.327] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1873.5]]
+[2019-02-27T20:05:48.327] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T20:05:48.327] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T20:05:48.327] [INFO] LOG - *0*
+[2019-02-27T20:05:48.327] [INFO] LOG - *1*
+[2019-02-27T20:05:48.327] [INFO] LOG - dijkstra
+[2019-02-27T20:05:48.329] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T20:05:50.007] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1873.5)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1873.5)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	*2*在本次循环后到起点的距离为？	826.1	0.1	3	2)	4
+32	showHelp(加入距离起点最近的点)	Help	5
+33	changeNodeColor(2,RGB(255,0,0))	Animation	5
+34	showHelp(加入边)	Help	6
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+36	showCode(3)	Code	7
+37	showHelp(比较距离)	Help	7
+38	showInequality(0,826.1+826.1≥0)	Attribute	7
+39	showInequality(1,826.1+999999≥999999)	Attribute	7
+40	showInequality(2,826.1+999999≥826.1)	Attribute	7
+41	showInequality(3,826.1+1873.5≥1950.3)	Attribute	7
+42	showHelp(更新到起点的距离)	Help	8
+43	showHelp(本次循环结束)	Help	9
+44	InequalityDisapper(0,xxxxxx)	Attribute	9
+45	InequalityDisapper(1,xxxxxx)	Attribute	9
+46	InequalityDisapper(2,xxxxxx)	Attribute	9
+47	InequalityDisapper(3,xxxxxx)	Attribute	9
+48	Question(1	*1*在本次循环后到起点的距离为？	2789.3	0.1	3	2)	10
+49	showHelp(加入距离起点最近的点)	Help	11
+50	changeNodeColor(3,RGB(255,0,0))	Animation	11
+51	showHelp(加入边)	Help	12
+52	changeEdgeColor(0,3,RGB(255,0,0))	Animation	12
+53	showCode(3)	Code	13
+54	showHelp(比较距离)	Help	13
+55	showInequality(0,1950.3+1950.3≥0)	Attribute	13
+56	showInequality(1,1950.3+839<999999)	Attribute	13
+57	showInequality(2,1950.3+1873.5≥826.1)	Attribute	13
+58	showInequality(3,1950.3+999999≥1950.3)	Attribute	13
+59	showHelp(更新到起点的距离)	Help	14
+60	changeNodeDist(1,2789.3)	Animation	14
+61	showHelp(本次循环结束)	Help	15
+62	InequalityDisapper(0,xxxxxx)	Attribute	15
+63	InequalityDisapper(1,xxxxxx)	Attribute	15
+64	InequalityDisapper(2,xxxxxx)	Attribute	15
+65	InequalityDisapper(3,xxxxxx)	Attribute	15
+66	showHelp(加入距离起点最近的点)	Help	16
+67	changeNodeColor(1,RGB(255,0,0))	Animation	16
+68	showHelp(加入边)	Help	17
+69	changeEdgeColor(3,1,RGB(255,0,0))	Animation	17
+70	showCode(3)	Code	18
+71	showHelp(比较距离)	Help	18
+72	showInequality(0,2789.3+999999≥0)	Attribute	18
+73	showInequality(1,2789.3+999999≥2789.3)	Attribute	18
+74	showInequality(2,2789.3+999999≥826.1)	Attribute	18
+75	showInequality(3,2789.3+839≥1950.3)	Attribute	18
+76	showHelp(更新到起点的距离)	Help	19
+77	showHelp(本次循环结束)	Help	20
+78	InequalityDisapper(0,xxxxxx)	Attribute	20
+79	InequalityDisapper(1,xxxxxx)	Attribute	20
+80	InequalityDisapper(2,xxxxxx)	Attribute	20
+81	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-02-27T20:24:26.662] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1873.5]]
+[2019-02-27T20:24:26.662] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T20:24:26.662] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T20:24:26.662] [INFO] LOG - *0*
+[2019-02-27T20:24:26.662] [INFO] LOG - *1*
+[2019-02-27T20:24:26.662] [INFO] LOG - dijkstra
+[2019-02-27T20:24:26.664] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T20:24:38.007] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1873.5)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1873.5)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	*0*到起点的路径为?	这就是起点!	0.1	3	2)	0x7fff219f5348
+32	showHelp(加入距离起点最近的点)	Help	4
+33	changeNodeColor(2,RGB(255,0,0))	Animation	4
+34	showHelp(加入边)	Help	5
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+36	showCode(3)	Code	6
+37	showHelp(比较距离)	Help	6
+38	showInequality(0,826.1+826.1≥0)	Attribute	6
+39	showInequality(1,826.1+999999≥999999)	Attribute	6
+40	showInequality(2,826.1+999999≥826.1)	Attribute	6
+41	showInequality(3,826.1+1873.5≥1950.3)	Attribute	6
+42	showHelp(更新到起点的距离)	Help	7
+43	showHelp(本次循环结束)	Help	8
+44	InequalityDisapper(0,xxxxxx)	Attribute	8
+45	InequalityDisapper(1,xxxxxx)	Attribute	8
+46	InequalityDisapper(2,xxxxxx)	Attribute	8
+47	InequalityDisapper(3,xxxxxx)	Attribute	8
+48	Question(1	将要加入的点是？	*3*	0.1	3	2)	9
+49	showHelp(加入距离起点最近的点)	Help	10
+50	changeNodeColor(3,RGB(255,0,0))	Animation	10
+51	showHelp(加入边)	Help	11
+52	changeEdgeColor(0,3,RGB(255,0,0))	Animation	11
+53	showCode(3)	Code	12
+54	showHelp(比较距离)	Help	12
+55	showInequality(0,1950.3+1950.3≥0)	Attribute	12
+56	showInequality(1,1950.3+839<999999)	Attribute	12
+57	showInequality(2,1950.3+1873.5≥826.1)	Attribute	12
+58	showInequality(3,1950.3+999999≥1950.3)	Attribute	12
+59	showHelp(更新到起点的距离)	Help	13
+60	changeNodeDist(1,2789.3)	Animation	13
+61	showHelp(本次循环结束)	Help	14
+62	InequalityDisapper(0,xxxxxx)	Attribute	14
+63	InequalityDisapper(1,xxxxxx)	Attribute	14
+64	InequalityDisapper(2,xxxxxx)	Attribute	14
+65	InequalityDisapper(3,xxxxxx)	Attribute	14
+66	showHelp(加入距离起点最近的点)	Help	15
+67	changeNodeColor(1,RGB(255,0,0))	Animation	15
+68	showHelp(加入边)	Help	16
+69	changeEdgeColor(3,1,RGB(255,0,0))	Animation	16
+70	showCode(3)	Code	17
+71	showHelp(比较距离)	Help	17
+72	showInequality(0,2789.3+999999≥0)	Attribute	17
+73	showInequality(1,2789.3+999999≥2789.3)	Attribute	17
+74	showInequality(2,2789.3+999999≥826.1)	Attribute	17
+75	showInequality(3,2789.3+839≥1950.3)	Attribute	17
+76	showHelp(更新到起点的距离)	Help	18
+77	showHelp(本次循环结束)	Help	19
+78	InequalityDisapper(0,xxxxxx)	Attribute	19
+79	InequalityDisapper(1,xxxxxx)	Attribute	19
+80	InequalityDisapper(2,xxxxxx)	Attribute	19
+81	InequalityDisapper(3,xxxxxx)	Attribute	19
+
+[2019-02-27T20:38:22.799] [INFO] LOG - *********************************
+[2019-02-27T20:38:22.802] [INFO] LOG - [START] multi process
+[2019-02-27T20:38:22.803] [INFO] LOG - [matser] master start
+[2019-02-27T20:38:23.851] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T20:38:23.860] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T20:38:23.876] [INFO] LOG - [master] listening : worker:1, pid:10165, address:null, port:3001
+[2019-02-27T20:38:23.883] [INFO] LOG - [master] listening : worker:4, pid:10172, address:null, port:3001
+[2019-02-27T20:38:23.893] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T20:38:23.906] [INFO] LOG - [master] listening : worker:3, pid:10171, address:null, port:3001
+[2019-02-27T20:38:23.956] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T20:38:23.963] [INFO] LOG - [master] listening : worker:2, pid:10166, address:null, port:3001
+[2019-02-27T20:39:42.360] [INFO] LOG - *********************************
+[2019-02-27T20:39:42.365] [INFO] LOG - [START] multi process
+[2019-02-27T20:39:42.366] [INFO] LOG - [matser] master start
+[2019-02-27T20:39:44.752] [INFO] LOG - *********************************
+[2019-02-27T20:39:44.757] [INFO] LOG - [START] multi process
+[2019-02-27T20:39:44.757] [INFO] LOG - [matser] master start
+[2019-02-27T20:39:45.816] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T20:39:45.833] [INFO] LOG - [master] listening : worker:2, pid:10522, address:null, port:3001
+[2019-02-27T20:39:45.853] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T20:39:45.871] [INFO] LOG - [master] listening : worker:4, pid:10528, address:null, port:3001
+[2019-02-27T20:39:45.909] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T20:39:45.917] [INFO] LOG - [master] listening : worker:1, pid:10521, address:null, port:3001
+[2019-02-27T20:39:45.936] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T20:39:45.945] [INFO] LOG - [master] listening : worker:3, pid:10527, address:null, port:3001
+[2019-02-27T22:29:28.096] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1873.5]]
+[2019-02-27T22:29:28.096] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T22:29:28.096] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T22:29:28.096] [INFO] LOG - *0*
+[2019-02-27T22:29:28.096] [INFO] LOG - *1*
+[2019-02-27T22:29:28.096] [INFO] LOG - DFS
+[2019-02-27T22:29:28.136] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T22:29:28.156] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	娣卞害浼樺厛閬嶅巻鐨勭粨鏋滄槸锛�	0312	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(0,RGB(255,0,0))	Animation	3
+17	showHelp(璁块棶鎵惧埌鐨勭粨鐐�)	Help	3
+18	Question(%d	涓嬩竴涓�瑕佽�块棶鐨勭粨鐐规槸锛�	1	*2*	0.1	3	2)	4
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+20	showHelp(瀵瑰垰璁块棶鐨勭粨鐐硅繘琛屾壂鎻忥紝瀵绘壘鍏堕偦鎺ョ偣涓�娌℃湁琚�璁块棶鐨勭粨鐐癸紝鎵惧埌鍚庡�瑰叾杩涜�屾繁搴︿紭鍏堥亶鍘�)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(2,RGB(255,0,0))	Animation	6
+24	showHelp(璁块棶鎵惧埌鐨勭粨鐐�)	Help	6
+25	Question(%d	涓嬩竴涓�瑕佽�块棶鐨勭粨鐐规槸锛�	1	*3*	0.1	3	2)	7
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	8
+27	showHelp(瀵瑰垰璁块棶鐨勭粨鐐硅繘琛屾壂鎻忥紝瀵绘壘鍏堕偦鎺ョ偣涓�娌℃湁琚�璁块棶鐨勭粨鐐癸紝鎵惧埌鍚庡�瑰叾杩涜�屾繁搴︿紭鍏堥亶鍘�)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(3,RGB(255,0,0))	Animation	9
+31	showHelp(璁块棶鎵惧埌鐨勭粨鐐�)	Help	9
+32	Question(%d	涓嬩竴涓�瑕佽�块棶鐨勭粨鐐规槸锛�	1	*1*	0.1	3	2)	10
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	11
+34	showHelp(瀵瑰垰璁块棶鐨勭粨鐐硅繘琛屾壂鎻忥紝瀵绘壘鍏堕偦鎺ョ偣涓�娌℃湁琚�璁块棶鐨勭粨鐐癸紝鎵惧埌鍚庡�瑰叾杩涜�屾繁搴︿紭鍏堥亶鍘�)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(1,RGB(255,0,0))	Animation	12
+38	showHelp(璁块棶鎵惧埌鐨勭粨鐐�)	Help	12
+
+[2019-02-27T22:29:28.706] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 87.719 ms
+
+[2019-02-27T22:29:38.087] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 162 - 24.738 ms
+
+[2019-02-27T23:21:43.479] [INFO] LOG - *********************************
+[2019-02-27T23:21:43.482] [INFO] LOG - [START] multi process
+[2019-02-27T23:21:43.482] [INFO] LOG - [matser] master start
+[2019-02-27T23:21:44.575] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T23:21:44.581] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T23:21:44.595] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T23:21:44.606] [INFO] LOG - [master] listening : worker:1, pid:16116, address:null, port:3001
+[2019-02-27T23:21:44.606] [INFO] LOG - [master] listening : worker:2, pid:16117, address:null, port:3001
+[2019-02-27T23:21:44.617] [INFO] LOG - [master] listening : worker:4, pid:16127, address:null, port:3001
+[2019-02-27T23:21:44.658] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T23:21:44.664] [INFO] LOG - [master] listening : worker:3, pid:16122, address:null, port:3001
+[2019-02-27T23:21:46.023] [INFO] LOG - *********************************
+[2019-02-27T23:21:46.030] [INFO] LOG - [START] multi process
+[2019-02-27T23:21:46.030] [INFO] LOG - [matser] master start
+[2019-02-27T23:21:47.155] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T23:21:47.179] [INFO] LOG - [master] listening : worker:3, pid:16235, address:null, port:3001
+[2019-02-27T23:21:47.231] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T23:21:47.239] [INFO] LOG - [master] listening : worker:2, pid:16230, address:null, port:3001
+[2019-02-27T23:21:47.321] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T23:21:47.327] [INFO] LOG - [master] listening : worker:4, pid:16236, address:null, port:3001
+[2019-02-27T23:21:47.338] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T23:21:47.344] [INFO] LOG - [master] listening : worker:1, pid:16229, address:null, port:3001
+[2019-02-27T23:22:30.416] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1877.4]]
+[2019-02-27T23:22:30.416] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T23:22:30.416] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T23:22:30.416] [INFO] LOG - *0*
+[2019-02-27T23:22:30.416] [INFO] LOG - *1*
+[2019-02-27T23:22:30.416] [INFO] LOG - DFS
+[2019-02-27T23:22:30.453] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T23:22:30.471] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	0312	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(0,RGB(255,0,0))	Animation	3
+17	showHelp(访问找到的结点)	Help	3
+18	Question(%d	下一个要访问的结点是？	1	*2*	0.1	3	2)	4
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(2,RGB(255,0,0))	Animation	6
+24	showHelp(访问找到的结点)	Help	6
+25	Question(%d	下一个要访问的结点是？	1	*3*	0.1	3	2)	7
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	8
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(3,RGB(255,0,0))	Animation	9
+31	showHelp(访问找到的结点)	Help	9
+32	Question(%d	下一个要访问的结点是？	1	*1*	0.1	3	2)	10
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	11
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(1,RGB(255,0,0))	Animation	12
+38	showHelp(访问找到的结点)	Help	12
+
+[2019-02-27T23:22:30.620] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 79.183 ms
+
+[2019-02-27T23:22:39.621] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 162 - 27.804 ms
+
+[2019-02-27T23:26:04.718] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1228.3],["*1*","*3*",839],["*2*","*3*",1877.4]]
+[2019-02-27T23:26:04.719] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T23:26:04.719] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T23:26:04.719] [INFO] LOG - *0*
+[2019-02-27T23:26:04.719] [INFO] LOG - *1*
+[2019-02-27T23:26:04.719] [INFO] LOG - DFS
+[2019-02-27T23:26:04.754] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T23:26:04.770] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(%d	下一个要访问的结点是？	1	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(%d	下一个要访问的结点是？	1	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(%d	下一个要访问的结点是？	1	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-02-27T23:26:04.972] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 76.493 ms
+
+[2019-02-27T23:26:40.591] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 162 - 29.526 ms
+
+[2019-02-27T23:30:24.067] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1228.3],["*1*","*3*",839],["*2*","*3*",1877.4]]
+[2019-02-27T23:30:24.067] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T23:30:24.067] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T23:30:24.067] [INFO] LOG - *0*
+[2019-02-27T23:30:24.067] [INFO] LOG - *1*
+[2019-02-27T23:30:24.067] [INFO] LOG - DFS
+[2019-02-27T23:30:24.069] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T23:30:24.083] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-02-27T23:32:29.018] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1877.4]]
+[2019-02-27T23:32:29.018] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-02-27T23:32:29.018] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-02-27T23:32:29.018] [INFO] LOG - *0*
+[2019-02-27T23:32:29.018] [INFO] LOG - *1*
+[2019-02-27T23:32:29.018] [INFO] LOG - dijkstra
+[2019-02-27T23:32:29.063] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-02-27T23:32:29.098] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1877.4)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1877.4)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	将要加入的点是？	*2*	0.1	3	2)	4
+32	showHelp(加入距离起点最近的点)	Help	5
+33	changeNodeColor(2,RGB(255,0,0))	Animation	5
+34	showHelp(加入边)	Help	6
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+36	showCode(3)	Code	7
+37	showHelp(比较距离)	Help	7
+38	showInequality(0,826.1+826.1≥0)	Attribute	7
+39	showInequality(1,826.1+999999≥999999)	Attribute	7
+40	showInequality(2,826.1+999999≥826.1)	Attribute	7
+41	showInequality(3,826.1+1877.4≥1950.3)	Attribute	7
+42	showHelp(更新到起点的距离)	Help	8
+43	showHelp(本次循环结束)	Help	9
+44	InequalityDisapper(0,xxxxxx)	Attribute	9
+45	InequalityDisapper(1,xxxxxx)	Attribute	9
+46	InequalityDisapper(2,xxxxxx)	Attribute	9
+47	InequalityDisapper(3,xxxxxx)	Attribute	9
+48	Question(1	将要加入的点是？	*3*	0.1	3	2)	10
+49	showHelp(加入距离起点最近的点)	Help	11
+50	changeNodeColor(3,RGB(255,0,0))	Animation	11
+51	showHelp(加入边)	Help	12
+52	changeEdgeColor(0,3,RGB(255,0,0))	Animation	12
+53	showCode(3)	Code	13
+54	showHelp(比较距离)	Help	13
+55	showInequality(0,1950.3+1950.3≥0)	Attribute	13
+56	showInequality(1,1950.3+839<999999)	Attribute	13
+57	showInequality(2,1950.3+1877.4≥826.1)	Attribute	13
+58	showInequality(3,1950.3+999999≥1950.3)	Attribute	13
+59	showHelp(更新到起点的距离)	Help	14
+60	changeNodeDist(1,2789.3)	Animation	14
+61	showHelp(本次循环结束)	Help	15
+62	InequalityDisapper(0,xxxxxx)	Attribute	15
+63	InequalityDisapper(1,xxxxxx)	Attribute	15
+64	InequalityDisapper(2,xxxxxx)	Attribute	15
+65	InequalityDisapper(3,xxxxxx)	Attribute	15
+66	showHelp(加入距离起点最近的点)	Help	16
+67	changeNodeColor(1,RGB(255,0,0))	Animation	16
+68	showHelp(加入边)	Help	17
+69	changeEdgeColor(3,1,RGB(255,0,0))	Animation	17
+70	showCode(3)	Code	18
+71	showHelp(比较距离)	Help	18
+72	showInequality(0,2789.3+999999≥0)	Attribute	18
+73	showInequality(1,2789.3+999999≥2789.3)	Attribute	18
+74	showInequality(2,2789.3+999999≥826.1)	Attribute	18
+75	showInequality(3,2789.3+839≥1950.3)	Attribute	18
+76	showHelp(更新到起点的距离)	Help	19
+77	showHelp(本次循环结束)	Help	20
+78	InequalityDisapper(0,xxxxxx)	Attribute	20
+79	InequalityDisapper(1,xxxxxx)	Attribute	20
+80	InequalityDisapper(2,xxxxxx)	Attribute	20
+81	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-02-27T23:33:25.495] [INFO] LOG - 核心4 pid:16229 重启
+[2019-02-27T23:33:25.496] [INFO] LOG - 核心4 pid:16235 重启
+[2019-02-27T23:33:25.497] [INFO] LOG - 核心4 pid:16230 重启
+[2019-02-27T23:33:25.501] [INFO] LOG - 核心4 pid:16236 重启
+[2019-02-27T23:33:26.154] [INFO] LOG - *********************************
+[2019-02-27T23:33:26.157] [INFO] LOG - [START] multi process
+[2019-02-27T23:33:26.157] [INFO] LOG - [matser] master start
+[2019-02-27T23:33:27.219] [INFO] LOG - [worker] worker start : 2
+[2019-02-27T23:33:27.234] [INFO] LOG - [master] listening : worker:2, pid:16838, address:null, port:3001
+[2019-02-27T23:33:27.232] [INFO] LOG - [worker] worker start : 4
+[2019-02-27T23:33:27.243] [INFO] LOG - [master] listening : worker:4, pid:16844, address:null, port:3001
+[2019-02-27T23:33:27.272] [INFO] LOG - [worker] worker start : 1
+[2019-02-27T23:33:27.278] [INFO] LOG - [master] listening : worker:1, pid:16837, address:null, port:3001
+[2019-02-27T23:33:27.329] [INFO] LOG - [worker] worker start : 3
+[2019-02-27T23:33:27.334] [INFO] LOG - [master] listening : worker:3, pid:16839, address:null, port:3001

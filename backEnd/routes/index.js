@@ -93,6 +93,8 @@ router.post('/data',(req, res, next) => {
   if (!fs.existsSync(p)) {
       fs.mkdirSync(p);
   }
+
+  //这几个实际上用不上!!
   createGlobalIn(globalIn, path.resolve(p, 'globalIn.txt'));
   createEdgeIn(edgeIn, path.resolve(p, 'edgeIn.txt'));
   createPointIn(pointIn, path.resolve(p, 'pointIn.txt'));
@@ -105,11 +107,7 @@ router.post('/data',(req, res, next) => {
   const str = `${exe} ${p}/  ${sName}`;   //exe是指定C++程序的位置， p指定文件路径、sName指定起点名字
   logger.info(str);
   //const encodingStr = 'gb2312';   //在linux下cout的编码为utf-8,在wondows下为gbk，没搞懂之前的ＤＦＳ为什么可以使用cp936?????
-  var  encodingStr='';
-  if(algo=="DFS")     //按理应该使用utf-8编码，这里为了不改动配置好了ＤＦＳ代码，针对这一算法特殊处理
-    encodingStr='gb2312';
-  else
-    encodingStr='utf-8';
+  var encodingStr='utf-8';
   //调用C++程序执行
   //exec() 方法用于检索字符串中的正则表达式的匹配
   exec(str, { encoding: 'buffer' }, (error, stdout, stderr) => {
