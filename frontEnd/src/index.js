@@ -26,7 +26,8 @@ let React = require("react");
 let ReactDOM = require("react-dom");
 
 window.MyMenu = MyMenu;
-window.showCode="showCode";
+window.showCode="showCode";          //组件间消息传递的标志
+window.showAction="showAction";
 
 class APP extends React.Component{
     constructor(props){

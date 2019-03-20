@@ -15951,3 +15951,3460 @@
 [2019-02-27T23:33:27.278] [INFO] LOG - [master] listening : worker:1, pid:16837, address:null, port:3001
 [2019-02-27T23:33:27.329] [INFO] LOG - [worker] worker start : 3
 [2019-02-27T23:33:27.334] [INFO] LOG - [master] listening : worker:3, pid:16839, address:null, port:3001
+[2019-03-20T13:10:10.847] [INFO] LOG - *********************************
+[2019-03-20T13:10:10.852] [INFO] LOG - [START] multi process
+[2019-03-20T13:10:10.852] [INFO] LOG - [matser] master start
+[2019-03-20T13:10:11.847] [INFO] LOG - [worker] worker start : 4
+[2019-03-20T13:10:11.860] [INFO] LOG - [master] listening : worker:4, pid:2621, address:null, port:3001
+[2019-03-20T13:10:11.871] [INFO] LOG - [worker] worker start : 3
+[2019-03-20T13:10:11.879] [INFO] LOG - [master] listening : worker:3, pid:2616, address:null, port:3001
+[2019-03-20T13:10:11.883] [INFO] LOG - [worker] worker start : 1
+[2019-03-20T13:10:11.890] [INFO] LOG - [master] listening : worker:1, pid:2614, address:null, port:3001
+[2019-03-20T13:10:11.918] [INFO] LOG - [worker] worker start : 2
+[2019-03-20T13:10:11.924] [INFO] LOG - [master] listening : worker:2, pid:2615, address:null, port:3001
+[2019-03-20T13:13:06.800] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T13:13:06.801] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T13:13:06.801] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T13:13:06.801] [INFO] LOG - *0*
+[2019-03-20T13:13:06.801] [INFO] LOG - *1*
+[2019-03-20T13:13:06.801] [INFO] LOG - dijkstra
+[2019-03-20T13:13:06.841] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T13:13:06.863] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	将要加入的点是？	*2*	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	将要加入的点是？	*1*	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	showHelp(加入距离起点最近的点)	Help	16
+75	changeNodeColor(3,RGB(255,0,0))	Animation	16
+76	showHelp(加入边)	Help	17
+77	changeEdgeColor(2,3,RGB(255,0,0))	Animation	17
+78	showCode(3)	Code	18
+79	showHelp(比较距离)	Help	18
+80	showInequality(0,1894.3+1950.3≥0)	Attribute	18
+81	showInequality(1,1894.3+839≥1174.5)	Attribute	18
+82	showInequality(2,1894.3+1068.2≥826.1)	Attribute	18
+83	showInequality(3,1894.3+999999≥1894.3)	Attribute	18
+84	showHelp(更新到起点的距离)	Help	19
+85	showHelp(本次循环结束)	Help	20
+86	InequalityDisapper(0,xxxxxx)	Attribute	20
+87	InequalityDisapper(1,xxxxxx)	Attribute	20
+88	InequalityDisapper(2,xxxxxx)	Attribute	20
+89	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-03-20T13:13:06.936] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 94.666 ms
+
+[2019-03-20T13:26:12.058] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T13:26:12.058] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T13:26:12.058] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T13:26:12.058] [INFO] LOG - *0*
+[2019-03-20T13:26:12.058] [INFO] LOG - *1*
+[2019-03-20T13:26:12.058] [INFO] LOG - dijkstra
+[2019-03-20T13:26:12.091] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T13:26:12.129] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	将要加入的点是？	*2*	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	将要加入的点是？	*1*	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	showHelp(加入距离起点最近的点)	Help	16
+75	changeNodeColor(3,RGB(255,0,0))	Animation	16
+76	showHelp(加入边)	Help	17
+77	changeEdgeColor(2,3,RGB(255,0,0))	Animation	17
+78	showCode(3)	Code	18
+79	showHelp(比较距离)	Help	18
+80	showInequality(0,1894.3+1950.3≥0)	Attribute	18
+81	showInequality(1,1894.3+839≥1174.5)	Attribute	18
+82	showInequality(2,1894.3+1068.2≥826.1)	Attribute	18
+83	showInequality(3,1894.3+999999≥1894.3)	Attribute	18
+84	showHelp(更新到起点的距离)	Help	19
+85	showHelp(本次循环结束)	Help	20
+86	InequalityDisapper(0,xxxxxx)	Attribute	20
+87	InequalityDisapper(1,xxxxxx)	Attribute	20
+88	InequalityDisapper(2,xxxxxx)	Attribute	20
+89	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-03-20T13:26:12.215] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 98.827 ms
+
+[2019-03-20T13:26:27.013] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 30.334 ms
+
+[2019-03-20T13:29:23.937] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T13:29:23.937] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T13:29:23.938] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T13:29:23.938] [INFO] LOG - *0*
+[2019-03-20T13:29:23.938] [INFO] LOG - *1*
+[2019-03-20T13:29:23.938] [INFO] LOG - dijkstra
+[2019-03-20T13:29:23.973] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T13:29:24.010] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*2*在本次循环后到起点的距离为？	826.1	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	showHelp(加入距离起点最近的点)	Help	16
+75	changeNodeColor(3,RGB(255,0,0))	Animation	16
+76	showHelp(加入边)	Help	17
+77	changeEdgeColor(2,3,RGB(255,0,0))	Animation	17
+78	showCode(3)	Code	18
+79	showHelp(比较距离)	Help	18
+80	showInequality(0,1894.3+1950.3≥0)	Attribute	18
+81	showInequality(1,1894.3+839≥1174.5)	Attribute	18
+82	showInequality(2,1894.3+1068.2≥826.1)	Attribute	18
+83	showInequality(3,1894.3+999999≥1894.3)	Attribute	18
+84	showHelp(更新到起点的距离)	Help	19
+85	showHelp(本次循环结束)	Help	20
+86	InequalityDisapper(0,xxxxxx)	Attribute	20
+87	InequalityDisapper(1,xxxxxx)	Attribute	20
+88	InequalityDisapper(2,xxxxxx)	Attribute	20
+89	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-03-20T13:29:24.087] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 104.097 ms
+
+[2019-03-20T15:12:36.179] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*1*","*2*",1224.8]]
+[2019-03-20T15:12:36.180] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31]]
+[2019-03-20T15:12:36.180] [INFO] LOG - [[3],[-1000,1000],[1000,-1000]]
+[2019-03-20T15:12:36.180] [INFO] LOG - *0*
+[2019-03-20T15:12:36.180] [INFO] LOG - *1*
+[2019-03-20T15:12:36.180] [INFO] LOG - DFS
+[2019-03-20T15:12:36.184] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T15:12:36.195] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+7	changeNodeColor(0,RGB(91,155,213))	Animation	1
+8	changeNodeColor(1,RGB(91,155,213))	Animation	1
+9	changeNodeColor(2,RGB(91,155,213))	Animation	1
+10	changeNodeColor(3,RGB(91,155,213))	Animation	1
+11	Question(1	深度优先遍历的结果是？	012	1.0	3	2)	2
+12	showCode(1)	Code	3
+13	changeNodeColor(0,RGB(255,0,0))	Animation	3
+14	showHelp(访问找到的结点)	Help	3
+15	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+16	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+17	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+18	showCode(2)	Code	5
+19	showCode(1)	Code	6
+20	changeNodeColor(1,RGB(255,0,0))	Animation	6
+21	showHelp(访问找到的结点)	Help	6
+22	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+23	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+24	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+25	showCode(2)	Code	8
+26	showCode(1)	Code	9
+27	changeNodeColor(2,RGB(255,0,0))	Animation	9
+28	showHelp(访问找到的结点)	Help	9
+
+[2019-03-20T16:14:22.173] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:14:22.173] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:14:22.173] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:14:22.173] [INFO] LOG - *0*
+[2019-03-20T16:14:22.173] [INFO] LOG - *1*
+[2019-03-20T16:14:22.173] [INFO] LOG - DFS
+[2019-03-20T16:14:22.175] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:14:22.182] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:22:33.070] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:22:33.070] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:22:33.070] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:22:33.070] [INFO] LOG - *0*
+[2019-03-20T16:22:33.070] [INFO] LOG - *1*
+[2019-03-20T16:22:33.070] [INFO] LOG - DFS
+[2019-03-20T16:22:33.072] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:22:33.079] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:26:06.218] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:26:06.218] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:26:06.218] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:26:06.218] [INFO] LOG - *0*
+[2019-03-20T16:26:06.219] [INFO] LOG - *1*
+[2019-03-20T16:26:06.219] [INFO] LOG - DFS
+[2019-03-20T16:26:06.259] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:26:06.292] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:32:21.281] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:32:21.281] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:32:21.282] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:32:21.282] [INFO] LOG - *0*
+[2019-03-20T16:32:21.282] [INFO] LOG - *1*
+[2019-03-20T16:32:21.282] [INFO] LOG - DFS
+[2019-03-20T16:32:21.287] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:32:21.300] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:40:57.186] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:40:57.186] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:40:57.186] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:40:57.186] [INFO] LOG - *0*
+[2019-03-20T16:40:57.186] [INFO] LOG - *1*
+[2019-03-20T16:40:57.186] [INFO] LOG - DFS
+[2019-03-20T16:40:57.190] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:40:57.197] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:43:21.092] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:43:21.092] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:43:21.092] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:43:21.092] [INFO] LOG - *0*
+[2019-03-20T16:43:21.092] [INFO] LOG - *1*
+[2019-03-20T16:43:21.092] [INFO] LOG - DFS
+[2019-03-20T16:43:21.095] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:43:21.107] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:46:19.586] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:46:19.586] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:46:19.586] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:46:19.586] [INFO] LOG - *0*
+[2019-03-20T16:46:19.586] [INFO] LOG - *1*
+[2019-03-20T16:46:19.587] [INFO] LOG - DFS
+[2019-03-20T16:46:19.589] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:46:19.601] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:53:49.934] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:53:49.934] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:53:49.934] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:53:49.934] [INFO] LOG - *0*
+[2019-03-20T16:53:49.934] [INFO] LOG - *1*
+[2019-03-20T16:53:49.934] [INFO] LOG - DFS
+[2019-03-20T16:53:49.936] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:53:49.946] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:57:43.154] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:57:43.154] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:57:43.154] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:57:43.154] [INFO] LOG - *0*
+[2019-03-20T16:57:43.154] [INFO] LOG - *1*
+[2019-03-20T16:57:43.155] [INFO] LOG - DFS
+[2019-03-20T16:57:43.157] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:57:43.168] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T16:59:24.099] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T16:59:24.099] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T16:59:24.099] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T16:59:24.099] [INFO] LOG - *0*
+[2019-03-20T16:59:24.099] [INFO] LOG - *1*
+[2019-03-20T16:59:24.099] [INFO] LOG - DFS
+[2019-03-20T16:59:24.102] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T16:59:24.111] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:03:46.500] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T17:03:46.500] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T17:03:46.500] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:03:46.500] [INFO] LOG - *0*
+[2019-03-20T17:03:46.500] [INFO] LOG - *3*
+[2019-03-20T17:03:46.500] [INFO] LOG - DFS
+[2019-03-20T17:03:46.502] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T17:03:46.509] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:05:12.517] [INFO] LOG - [["*0*","*2*",11.9],["*0*","*4*",5.3],["*0*","*5*",14.1],["*1*","*3*",6.7],["*1*","*4*",10.4],["*1*","*5*",18.2],["*2*","*3*",3.1],["*2*","*5*",16.3]]
+[2019-03-20T17:05:12.517] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30],["*4*",114,30],["*5*",114,30]]
+[2019-03-20T17:05:12.517] [INFO] LOG - [[6],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:05:12.517] [INFO] LOG - *5*
+[2019-03-20T17:05:12.517] [INFO] LOG - *1*
+[2019-03-20T17:05:12.517] [INFO] LOG - DFS
+[2019-03-20T17:05:12.520] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *5*
+[2019-03-20T17:05:12.526] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,4,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(4,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,5,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(5,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,4,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(4,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(1,5,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(5,1,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeEdgeColor(2,5,RGB(10,10,10))	Animation	1
+16	changeEdgeColor(5,2,RGB(10,10,10))	Animation	1
+17	changeNodeColor(0,RGB(91,155,213))	Animation	1
+18	changeNodeColor(1,RGB(91,155,213))	Animation	1
+19	changeNodeColor(2,RGB(91,155,213))	Animation	1
+20	changeNodeColor(3,RGB(91,155,213))	Animation	1
+21	changeNodeColor(4,RGB(91,155,213))	Animation	1
+22	changeNodeColor(5,RGB(91,155,213))	Animation	1
+23	changeNodeColor(6,RGB(91,155,213))	Animation	1
+24	changeNodeColor(7,RGB(91,155,213))	Animation	1
+25	changeNodeColor(8,RGB(91,155,213))	Animation	1
+26	Question(1	深度优先遍历的结果是？	142350	1.0	3	2)	2
+27	showCode(1)	Code	3
+28	changeNodeColor(5,RGB(255,0,0))	Animation	3
+29	showHelp(访问找到的结点)	Help	3
+30	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+31	changeEdgeColor(5,0,RGB(255,0,0))	Animation	5
+32	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+33	showCode(2)	Code	5
+34	showCode(1)	Code	6
+35	changeNodeColor(0,RGB(255,0,0))	Animation	6
+36	showHelp(访问找到的结点)	Help	6
+37	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+38	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+39	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+40	showCode(2)	Code	8
+41	showCode(1)	Code	9
+42	changeNodeColor(2,RGB(255,0,0))	Animation	9
+43	showHelp(访问找到的结点)	Help	9
+44	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+45	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+46	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+47	showCode(2)	Code	11
+48	showCode(1)	Code	12
+49	changeNodeColor(3,RGB(255,0,0))	Animation	12
+50	showHelp(访问找到的结点)	Help	12
+51	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	13
+52	changeEdgeColor(3,1,RGB(255,0,0))	Animation	14
+53	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	14
+54	showCode(2)	Code	14
+55	showCode(1)	Code	15
+56	changeNodeColor(1,RGB(255,0,0))	Animation	15
+57	showHelp(访问找到的结点)	Help	15
+58	Question(1	下一个要访问的结点是？	*4*	0.1	3	2)	16
+59	changeEdgeColor(1,4,RGB(255,0,0))	Animation	17
+60	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	17
+61	showCode(2)	Code	17
+62	showCode(1)	Code	18
+63	changeNodeColor(4,RGB(255,0,0))	Animation	18
+64	showHelp(访问找到的结点)	Help	18
+
+[2019-03-20T17:05:56.117] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.releaseConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:157:10)
+    at Pool._removeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:277:8)
+    at Pool._purgeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:258:8)
+    at Ping.onOperationComplete (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:101:12)
+    at Ping.<anonymous> (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:468:16)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:05:57.702] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.releaseConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:157:10)
+    at Pool._removeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:277:8)
+    at Pool._purgeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:258:8)
+    at Ping.onOperationComplete (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:101:12)
+    at Ping.<anonymous> (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:468:16)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:01.120] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:02.706] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:03.583] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.releaseConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:157:10)
+    at Pool._removeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:277:8)
+    at Pool._purgeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:258:8)
+    at Ping.onOperationComplete (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:101:12)
+    at Ping.<anonymous> (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:468:16)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:05.173] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.releaseConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:157:10)
+    at Pool._removeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:277:8)
+    at Pool._purgeConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:258:8)
+    at Ping.onOperationComplete (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:101:12)
+    at Ping.<anonymous> (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:468:16)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:13.499] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:14.368] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:18.002] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:18.401] [ERROR] LOG - ERROR { Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:411:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true }
+[2019-03-20T17:06:21.986] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:21.986] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:21.986] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:21.986] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:30.436] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:30.437] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:34.848] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:38.369] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:06:41.440] [ERROR] LOG - ERROR { Error: connect EHOSTUNREACH 47.100.30.165:3306
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+    --------------------
+    at Protocol._enqueue (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:432:33)
+    at MySQLStore.set (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-mysql-session/index.js:237:8)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:381:15)
+    at ServerResponse.end (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/node_modules/express-session/index.js:330:21)
+  code: 'EHOSTUNREACH',
+  errno: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '47.100.30.165',
+  port: 3306,
+  fatal: true }
+[2019-03-20T17:11:26.700] [INFO] LOG - [["*0*","*1*",2],["*0*","*2*",5],["*0*","*3*",16.6],["*1*","*2*",3.6],["*1*","*3*",15.1],["*2*","*3*",11.4]]
+[2019-03-20T17:11:26.700] [INFO] LOG - [["*0*",120,30],["*1*",120,30],["*2*",120,30],["*3*",120,30]]
+[2019-03-20T17:11:26.700] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:11:26.700] [INFO] LOG - *2*
+[2019-03-20T17:11:26.700] [INFO] LOG - *3*
+[2019-03-20T17:11:26.700] [INFO] LOG - DFS
+[2019-03-20T17:11:26.702] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T17:11:26.711] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:13:34.274] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",31.3],["*0*","*3*",26.6],["*1*","*2*",29.5],["*1*","*3*",31.5],["*2*","*3*",6.7]]
+[2019-03-20T17:13:34.275] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T17:13:34.275] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:13:34.275] [INFO] LOG - *1*
+[2019-03-20T17:13:34.275] [INFO] LOG - *0*
+[2019-03-20T17:13:34.275] [INFO] LOG - DFS
+[2019-03-20T17:13:34.277] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T17:13:34.292] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:17:39.818] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",12.5],["*0*","*3*",31.3],["*1*","*2*",29],["*1*","*3*",29.5],["*2*","*3*",20.7]]
+[2019-03-20T17:17:39.819] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T17:17:39.819] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:17:39.819] [INFO] LOG - *1*
+[2019-03-20T17:17:39.819] [INFO] LOG - *2*
+[2019-03-20T17:17:39.819] [INFO] LOG - DFS
+[2019-03-20T17:17:39.821] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T17:17:39.833] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:19:41.369] [INFO] LOG - [["*0*","*1*",3.9],["*0*","*2*",19.1],["*0*","*3*",24.5],["*1*","*2*",18.6],["*1*","*3*",26.6],["*2*","*3*",31.5]]
+[2019-03-20T17:19:41.369] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T17:19:41.369] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:19:41.369] [INFO] LOG - *2*
+[2019-03-20T17:19:41.369] [INFO] LOG - *0*
+[2019-03-20T17:19:41.370] [INFO] LOG - DFS
+[2019-03-20T17:19:41.372] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T17:19:41.380] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:26:19.123] [INFO] LOG - [["*0*","*1*",8.7],["*0*","*2*",12.2],["*0*","*3*",14.4],["*1*","*2*",16],["*1*","*3*",9.6],["*2*","*3*",16]]
+[2019-03-20T17:26:19.123] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T17:26:19.123] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:26:19.123] [INFO] LOG - *2*
+[2019-03-20T17:26:19.123] [INFO] LOG - *1*
+[2019-03-20T17:26:19.123] [INFO] LOG - DFS
+[2019-03-20T17:26:19.125] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T17:26:19.134] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T17:30:34.030] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",26.6],["*0*","*3*",31.3],["*1*","*2*",31.5],["*1*","*3*",29.5],["*2*","*3*",6.8]]
+[2019-03-20T17:30:34.030] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T17:30:34.030] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T17:30:34.030] [INFO] LOG - *1*
+[2019-03-20T17:30:34.030] [INFO] LOG - *0*
+[2019-03-20T17:30:34.030] [INFO] LOG - DFS
+[2019-03-20T17:30:34.032] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T17:30:34.041] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:25:44.019] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",26.1],["*0*","*3*",12.5],["*1*","*2*",25.5],["*1*","*3*",29],["*2*","*3*",18.8]]
+[2019-03-20T18:25:44.019] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T18:25:44.019] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:25:44.019] [INFO] LOG - *1*
+[2019-03-20T18:25:44.019] [INFO] LOG - *3*
+[2019-03-20T18:25:44.019] [INFO] LOG - DFS
+[2019-03-20T18:25:44.021] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T18:25:44.031] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:48:28.917] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T18:48:28.917] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T18:48:28.917] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:48:28.917] [INFO] LOG - *1*
+[2019-03-20T18:48:28.917] [INFO] LOG - *0*
+[2019-03-20T18:48:28.917] [INFO] LOG - DFS
+[2019-03-20T18:48:28.920] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T18:48:28.928] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	2031	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(1,RGB(255,0,0))	Animation	3
+17	showHelp(访问找到的结点)	Help	3
+18	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	4
+19	changeEdgeColor(1,3,RGB(255,0,0))	Animation	5
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(3,RGB(255,0,0))	Animation	6
+24	showHelp(访问找到的结点)	Help	6
+25	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	7
+26	changeEdgeColor(3,0,RGB(255,0,0))	Animation	8
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(0,RGB(255,0,0))	Animation	9
+31	showHelp(访问找到的结点)	Help	9
+32	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	10
+33	changeEdgeColor(0,2,RGB(255,0,0))	Animation	11
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(2,RGB(255,0,0))	Animation	12
+38	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:51:21.147] [INFO] LOG - [["*0*","*1*",4.4],["*0*","*2*",23.7],["*0*","*3*",25.4],["*1*","*2*",24.7],["*1*","*3*",25.8],["*2*","*3*",13.6]]
+[2019-03-20T18:51:21.147] [INFO] LOG - [["*0*",116,39],["*1*",116,39],["*2*",116,40],["*3*",116,40]]
+[2019-03-20T18:51:21.148] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:51:21.148] [INFO] LOG - *2*
+[2019-03-20T18:51:21.148] [INFO] LOG - *0*
+[2019-03-20T18:51:21.148] [INFO] LOG - DFS
+[2019-03-20T18:51:21.150] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T18:51:21.162] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:54:17.323] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",26.1],["*0*","*3*",12.5],["*1*","*2*",25.5],["*1*","*3*",29],["*2*","*3*",18.8]]
+[2019-03-20T18:54:17.323] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T18:54:17.323] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:54:17.323] [INFO] LOG - *1*
+[2019-03-20T18:54:17.323] [INFO] LOG - *0*
+[2019-03-20T18:54:17.323] [INFO] LOG - DFS
+[2019-03-20T18:54:17.325] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T18:54:17.332] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:56:24.369] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",31.3],["*0*","*3*",12.5],["*1*","*2*",29.5],["*1*","*3*",29],["*2*","*3*",20.3]]
+[2019-03-20T18:56:24.369] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T18:56:24.369] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:56:24.369] [INFO] LOG - *1*
+[2019-03-20T18:56:24.370] [INFO] LOG - *0*
+[2019-03-20T18:56:24.370] [INFO] LOG - DFS
+[2019-03-20T18:56:24.371] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T18:56:24.381] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T18:57:49.117] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",31.3],["*0*","*3*",12.5],["*1*","*2*",29.5],["*1*","*3*",29],["*2*","*3*",20.3]]
+[2019-03-20T18:57:49.117] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T18:57:49.117] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T18:57:49.117] [INFO] LOG - *1*
+[2019-03-20T18:57:49.117] [INFO] LOG - *0*
+[2019-03-20T18:57:49.118] [INFO] LOG - DFS
+[2019-03-20T18:57:49.119] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T18:57:49.129] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:00:19.333] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",26.1],["*0*","*3*",12.5],["*1*","*2*",25.5],["*1*","*3*",29],["*2*","*3*",18.8]]
+[2019-03-20T19:00:19.333] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T19:00:19.333] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:00:19.333] [INFO] LOG - *1*
+[2019-03-20T19:00:19.334] [INFO] LOG - *0*
+[2019-03-20T19:00:19.334] [INFO] LOG - DFS
+[2019-03-20T19:00:19.336] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T19:00:19.350] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1023	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(1,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(0,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:01:50.769] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*3*",1950.3],["*1*","*2*",1224.8]]
+[2019-03-20T19:01:50.769] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:01:50.770] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:01:50.770] [INFO] LOG - *2*
+[2019-03-20T19:01:50.770] [INFO] LOG - *3*
+[2019-03-20T19:01:50.770] [INFO] LOG - DFS
+[2019-03-20T19:01:50.772] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T19:01:50.781] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+7	changeNodeColor(0,RGB(91,155,213))	Animation	1
+8	changeNodeColor(1,RGB(91,155,213))	Animation	1
+9	changeNodeColor(2,RGB(91,155,213))	Animation	1
+10	changeNodeColor(3,RGB(91,155,213))	Animation	1
+11	Question(1	深度优先遍历的结果是？	2103	1.0	3	2)	2
+12	showCode(1)	Code	3
+13	changeNodeColor(2,RGB(255,0,0))	Animation	3
+14	showHelp(访问找到的结点)	Help	3
+15	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+16	changeEdgeColor(2,1,RGB(255,0,0))	Animation	5
+17	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+18	showCode(2)	Code	5
+19	showCode(1)	Code	6
+20	changeNodeColor(1,RGB(255,0,0))	Animation	6
+21	showHelp(访问找到的结点)	Help	6
+22	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	7
+23	changeEdgeColor(1,0,RGB(255,0,0))	Animation	8
+24	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+25	showCode(2)	Code	8
+26	showCode(1)	Code	9
+27	changeNodeColor(0,RGB(255,0,0))	Animation	9
+28	showHelp(访问找到的结点)	Help	9
+29	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+30	changeEdgeColor(0,3,RGB(255,0,0))	Animation	11
+31	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+32	showCode(2)	Code	11
+33	showCode(1)	Code	12
+34	changeNodeColor(3,RGB(255,0,0))	Animation	12
+35	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:04:04.455] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:04:04.455] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:04:04.455] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:04:04.455] [INFO] LOG - *0*
+[2019-03-20T19:04:04.455] [INFO] LOG - *1*
+[2019-03-20T19:04:04.455] [INFO] LOG - DFS
+[2019-03-20T19:04:04.459] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:04:04.470] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:06:47.569] [INFO] LOG - [["*0*","*1*",826.1],["*0*","*2*",1174.5],["*0*","*3*",1950.3],["*1*","*2*",1207.5],["*1*","*3*",1068.2],["*2*","*3*",839]]
+[2019-03-20T19:06:47.569] [INFO] LOG - [["*0*",114,30],["*1*",121,31],["*2*",116,39],["*3*",121,38]]
+[2019-03-20T19:06:47.569] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:06:47.569] [INFO] LOG - *0*
+[2019-03-20T19:06:47.570] [INFO] LOG - *2*
+[2019-03-20T19:06:47.570] [INFO] LOG - DFS
+[2019-03-20T19:06:47.572] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:06:47.582] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:13:42.846] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:13:42.847] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:13:42.847] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:13:42.847] [INFO] LOG - *0*
+[2019-03-20T19:13:42.847] [INFO] LOG - *1*
+[2019-03-20T19:13:42.847] [INFO] LOG - DFS
+[2019-03-20T19:13:42.849] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:13:42.858] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:16:44.925] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:16:44.925] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:16:44.925] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:16:44.925] [INFO] LOG - *0*
+[2019-03-20T19:16:44.925] [INFO] LOG - *1*
+[2019-03-20T19:16:44.925] [INFO] LOG - DFS
+[2019-03-20T19:16:44.927] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:16:44.938] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:18:22.353] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:18:22.354] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:18:22.354] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:18:22.354] [INFO] LOG - *0*
+[2019-03-20T19:18:22.354] [INFO] LOG - *1*
+[2019-03-20T19:18:22.354] [INFO] LOG - DFS
+[2019-03-20T19:18:22.357] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:18:22.368] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	0123	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(0,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	4
+25	changeEdgeColor(0,1,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(1,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	7
+32	changeEdgeColor(1,2,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(2,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(2,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:30:47.543] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:30:47.543] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:30:47.543] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:30:47.544] [INFO] LOG - *0*
+[2019-03-20T19:30:47.544] [INFO] LOG - *1*
+[2019-03-20T19:30:47.544] [INFO] LOG - DFS
+[2019-03-20T19:30:47.546] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:30:47.558] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	0312	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(0,RGB(255,0,0))	Animation	3
+17	showHelp(访问找到的结点)	Help	3
+18	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	4
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(2,RGB(255,0,0))	Animation	6
+24	showHelp(访问找到的结点)	Help	6
+25	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	7
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	8
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(3,RGB(255,0,0))	Animation	9
+31	showHelp(访问找到的结点)	Help	9
+32	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	10
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	11
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(1,RGB(255,0,0))	Animation	12
+38	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:34:07.190] [INFO] LOG - [["*0*","*1*",3.9],["*0*","*2*",19.1],["*0*","*3*",30.1],["*1*","*2*",18.6],["*1*","*3*",31.3],["*2*","*3*",29.5]]
+[2019-03-20T19:34:07.190] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T19:34:07.190] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:34:07.190] [INFO] LOG - *2*
+[2019-03-20T19:34:07.190] [INFO] LOG - *0*
+[2019-03-20T19:34:07.191] [INFO] LOG - DFS
+[2019-03-20T19:34:07.193] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T19:34:07.200] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:38:11.129] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:38:11.130] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:38:11.130] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:38:11.130] [INFO] LOG - *0*
+[2019-03-20T19:38:11.130] [INFO] LOG - *1*
+[2019-03-20T19:38:11.130] [INFO] LOG - dijkstra
+[2019-03-20T19:38:11.132] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:38:14.003] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1068.2)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1068.2)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	4
+32	showHelp(加入距离起点最近的点)	Help	5
+33	changeNodeColor(2,RGB(255,0,0))	Animation	5
+34	showHelp(加入边)	Help	6
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+36	showCode(3)	Code	7
+37	showHelp(比较距离)	Help	7
+38	showInequality(0,826.1+826.1≥0)	Attribute	7
+39	showInequality(1,826.1+999999≥999999)	Attribute	7
+40	showInequality(2,826.1+999999≥826.1)	Attribute	7
+41	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+42	showHelp(更新到起点的距离)	Help	8
+43	changeNodeDist(3,1894.3)	Animation	8
+44	showHelp(本次循环结束)	Help	9
+45	InequalityDisapper(0,xxxxxx)	Attribute	9
+46	InequalityDisapper(1,xxxxxx)	Attribute	9
+47	InequalityDisapper(2,xxxxxx)	Attribute	9
+48	InequalityDisapper(3,xxxxxx)	Attribute	9
+49	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	10
+50	showHelp(加入距离起点最近的点)	Help	11
+51	changeNodeColor(3,RGB(255,0,0))	Animation	11
+52	showHelp(加入边)	Help	12
+53	changeEdgeColor(2,3,RGB(255,0,0))	Animation	12
+54	showCode(3)	Code	13
+55	showHelp(比较距离)	Help	13
+56	showInequality(0,1894.3+1950.3≥0)	Attribute	13
+57	showInequality(1,1894.3+839<999999)	Attribute	13
+58	showInequality(2,1894.3+1068.2≥826.1)	Attribute	13
+59	showInequality(3,1894.3+999999≥1894.3)	Attribute	13
+60	showHelp(更新到起点的距离)	Help	14
+61	changeNodeDist(1,2733.3)	Animation	14
+62	showHelp(本次循环结束)	Help	15
+63	InequalityDisapper(0,xxxxxx)	Attribute	15
+64	InequalityDisapper(1,xxxxxx)	Attribute	15
+65	InequalityDisapper(2,xxxxxx)	Attribute	15
+66	InequalityDisapper(3,xxxxxx)	Attribute	15
+67	Question(1	*1*在本次循环后到起点的距离为？	2733.3	0.1	3	2)	16
+68	showHelp(加入距离起点最近的点)	Help	17
+69	changeNodeColor(1,RGB(255,0,0))	Animation	17
+70	showHelp(加入边)	Help	18
+71	changeEdgeColor(3,1,RGB(255,0,0))	Animation	18
+72	showCode(3)	Code	19
+73	showHelp(比较距离)	Help	19
+74	showInequality(0,2733.3+999999≥0)	Attribute	19
+75	showInequality(1,2733.3+999999≥2733.3)	Attribute	19
+76	showInequality(2,2733.3+999999≥826.1)	Attribute	19
+77	showInequality(3,2733.3+839≥1894.3)	Attribute	19
+78	showHelp(更新到起点的距离)	Help	20
+79	showHelp(本次循环结束)	Help	21
+80	InequalityDisapper(0,xxxxxx)	Attribute	21
+81	InequalityDisapper(1,xxxxxx)	Attribute	21
+82	InequalityDisapper(2,xxxxxx)	Attribute	21
+83	InequalityDisapper(3,xxxxxx)	Attribute	21
+
+[2019-03-20T19:50:11.439] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:50:11.439] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:50:11.439] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:50:11.439] [INFO] LOG - *0*
+[2019-03-20T19:50:11.440] [INFO] LOG - *1*
+[2019-03-20T19:50:11.440] [INFO] LOG - DFS
+[2019-03-20T19:50:11.442] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:50:11.451] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	0312	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(0,RGB(255,0,0))	Animation	3
+17	showHelp(访问找到的结点)	Help	3
+18	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	4
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(2,RGB(255,0,0))	Animation	6
+24	showHelp(访问找到的结点)	Help	6
+25	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	7
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	8
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(3,RGB(255,0,0))	Animation	9
+31	showHelp(访问找到的结点)	Help	9
+32	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	10
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	11
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(1,RGB(255,0,0))	Animation	12
+38	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:50:57.617] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:50:57.617] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:50:57.618] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:50:57.618] [INFO] LOG - *0*
+[2019-03-20T19:50:57.618] [INFO] LOG - *1*
+[2019-03-20T19:50:57.618] [INFO] LOG - dijkstra
+[2019-03-20T19:50:57.620] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:50:57.627] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+11	changeNodeColor(0,RGB(91,155,213))	Animation	1
+12	changeNodeColor(1,RGB(91,155,213))	Animation	1
+13	changeNodeColor(2,RGB(91,155,213))	Animation	1
+14	changeNodeColor(3,RGB(91,155,213))	Animation	1
+15	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+16	changeEdgeLength(0,2,826.1)	Animation	2
+17	changeEdgeLength(0,3,1950.3)	Animation	2
+18	changeEdgeLength(1,3,839)	Animation	2
+19	changeEdgeLength(2,0,826.1)	Animation	2
+20	changeEdgeLength(2,3,1068.2)	Animation	2
+21	changeEdgeLength(3,0,1950.3)	Animation	2
+22	changeEdgeLength(3,1,839)	Animation	2
+23	changeEdgeLength(3,2,1068.2)	Animation	2
+24	changeNodeDist(0,0)	Animation	2
+25	changeNodeDist(1,999999)	Animation	2
+26	changeNodeDist(2,826.1)	Animation	2
+27	changeNodeDist(3,1950.3)	Animation	2
+28	showCode(2)	Code	3
+29	showHelp(起点加入最短路径)	Help	3
+30	changeNodeColor(0,RGB(255,0,0))	Animation	3
+31	Question(1	将要加入的点是？	*2*	0.1	3	2)	4
+32	showHelp(加入距离起点最近的点)	Help	5
+33	changeNodeColor(2,RGB(255,0,0))	Animation	5
+34	showHelp(加入边)	Help	6
+35	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+36	showCode(3)	Code	7
+37	showHelp(比较距离)	Help	7
+38	showInequality(0,826.1+826.1≥0)	Attribute	7
+39	showInequality(1,826.1+999999≥999999)	Attribute	7
+40	showInequality(2,826.1+999999≥826.1)	Attribute	7
+41	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+42	showHelp(更新到起点的距离)	Help	8
+43	changeNodeDist(3,1894.3)	Animation	8
+44	showHelp(本次循环结束)	Help	9
+45	InequalityDisapper(0,xxxxxx)	Attribute	9
+46	InequalityDisapper(1,xxxxxx)	Attribute	9
+47	InequalityDisapper(2,xxxxxx)	Attribute	9
+48	InequalityDisapper(3,xxxxxx)	Attribute	9
+49	Question(1	将要加入的点是？	*3*	0.1	3	2)	10
+50	showHelp(加入距离起点最近的点)	Help	11
+51	changeNodeColor(3,RGB(255,0,0))	Animation	11
+52	showHelp(加入边)	Help	12
+53	changeEdgeColor(2,3,RGB(255,0,0))	Animation	12
+54	showCode(3)	Code	13
+55	showHelp(比较距离)	Help	13
+56	showInequality(0,1894.3+1950.3≥0)	Attribute	13
+57	showInequality(1,1894.3+839<999999)	Attribute	13
+58	showInequality(2,1894.3+1068.2≥826.1)	Attribute	13
+59	showInequality(3,1894.3+999999≥1894.3)	Attribute	13
+60	showHelp(更新到起点的距离)	Help	14
+61	changeNodeDist(1,2733.3)	Animation	14
+62	showHelp(本次循环结束)	Help	15
+63	InequalityDisapper(0,xxxxxx)	Attribute	15
+64	InequalityDisapper(1,xxxxxx)	Attribute	15
+65	InequalityDisapper(2,xxxxxx)	Attribute	15
+66	InequalityDisapper(3,xxxxxx)	Attribute	15
+67	showHelp(加入距离起点最近的点)	Help	16
+68	changeNodeColor(1,RGB(255,0,0))	Animation	16
+69	showHelp(加入边)	Help	17
+70	changeEdgeColor(3,1,RGB(255,0,0))	Animation	17
+71	showCode(3)	Code	18
+72	showHelp(比较距离)	Help	18
+73	showInequality(0,2733.3+999999≥0)	Attribute	18
+74	showInequality(1,2733.3+999999≥2733.3)	Attribute	18
+75	showInequality(2,2733.3+999999≥826.1)	Attribute	18
+76	showInequality(3,2733.3+839≥1894.3)	Attribute	18
+77	showHelp(更新到起点的距离)	Help	19
+78	showHelp(本次循环结束)	Help	20
+79	InequalityDisapper(0,xxxxxx)	Attribute	20
+80	InequalityDisapper(1,xxxxxx)	Attribute	20
+81	InequalityDisapper(2,xxxxxx)	Attribute	20
+82	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-03-20T19:53:04.172] [INFO] LOG - [["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:53:04.172] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:53:04.172] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:53:04.172] [INFO] LOG - *0*
+[2019-03-20T19:53:04.172] [INFO] LOG - *1*
+[2019-03-20T19:53:04.173] [INFO] LOG - DFS
+[2019-03-20T19:53:04.175] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:53:04.190] [INFO] LOG - 1	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+9	changeNodeColor(0,RGB(91,155,213))	Animation	1
+10	changeNodeColor(1,RGB(91,155,213))	Animation	1
+11	changeNodeColor(2,RGB(91,155,213))	Animation	1
+12	changeNodeColor(3,RGB(91,155,213))	Animation	1
+13	changeNodeColor(4,RGB(91,155,213))	Animation	1
+14	Question(1	深度优先遍历的结果是？	0312	1.0	3	2)	2
+15	showCode(1)	Code	3
+16	changeNodeColor(0,RGB(255,0,0))	Animation	3
+17	showHelp(访问找到的结点)	Help	3
+18	Question(1	下一个要访问的结点是？	*2*	0.1	3	2)	4
+19	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+20	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+21	showCode(2)	Code	5
+22	showCode(1)	Code	6
+23	changeNodeColor(2,RGB(255,0,0))	Animation	6
+24	showHelp(访问找到的结点)	Help	6
+25	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	7
+26	changeEdgeColor(2,3,RGB(255,0,0))	Animation	8
+27	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+28	showCode(2)	Code	8
+29	showCode(1)	Code	9
+30	changeNodeColor(3,RGB(255,0,0))	Animation	9
+31	showHelp(访问找到的结点)	Help	9
+32	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	10
+33	changeEdgeColor(3,1,RGB(255,0,0))	Animation	11
+34	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+35	showCode(2)	Code	11
+36	showCode(1)	Code	12
+37	changeNodeColor(1,RGB(255,0,0))	Animation	12
+38	showHelp(访问找到的结点)	Help	12
+
+[2019-03-20T19:54:14.560] [INFO] LOG - [["*0*","*1*",18.6],["*0*","*2*",26.1],["*0*","*3*",12.5],["*1*","*2*",25.5],["*1*","*3*",29],["*2*","*3*",18.8]]
+[2019-03-20T19:54:14.560] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T19:54:14.560] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:54:14.560] [INFO] LOG - *1*
+[2019-03-20T19:54:14.560] [INFO] LOG - *0*
+[2019-03-20T19:54:14.560] [INFO] LOG - dijkstra
+[2019-03-20T19:54:14.562] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *1*
+[2019-03-20T19:54:14.571] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,18.6)	Animation	2
+21	changeEdgeLength(0,2,26.1)	Animation	2
+22	changeEdgeLength(0,3,12.5)	Animation	2
+23	changeEdgeLength(1,0,18.6)	Animation	2
+24	changeEdgeLength(1,2,25.5)	Animation	2
+25	changeEdgeLength(1,3,29)	Animation	2
+26	changeEdgeLength(2,0,26.1)	Animation	2
+27	changeEdgeLength(2,1,25.5)	Animation	2
+28	changeEdgeLength(2,3,18.8)	Animation	2
+29	changeEdgeLength(3,0,12.5)	Animation	2
+30	changeEdgeLength(3,1,29)	Animation	2
+31	changeEdgeLength(3,2,18.8)	Animation	2
+32	changeNodeDist(0,18.6)	Animation	2
+33	changeNodeDist(1,0)	Animation	2
+34	changeNodeDist(2,25.5)	Animation	2
+35	changeNodeDist(3,29)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(1,RGB(255,0,0))	Animation	3
+39	Question(1	*1*到起点的路径为?	这就是起点!	0.1	3	2)	0x7fff85f8b2e8
+40	showHelp(加入距离起点最近的点)	Help	4
+41	changeNodeColor(0,RGB(255,0,0))	Animation	4
+42	showHelp(加入边)	Help	5
+43	changeEdgeColor(1,0,RGB(255,0,0))	Animation	5
+44	showCode(3)	Code	6
+45	showHelp(比较距离)	Help	6
+46	showInequality(0,18.6+999999≥18.6)	Attribute	6
+47	showInequality(1,18.6+18.6≥0)	Attribute	6
+48	showInequality(2,18.6+26.1≥25.5)	Attribute	6
+49	showInequality(3,18.6+12.5≥29)	Attribute	6
+50	showHelp(更新到起点的距离)	Help	7
+51	showHelp(本次循环结束)	Help	8
+52	InequalityDisapper(0,xxxxxx)	Attribute	8
+53	InequalityDisapper(1,xxxxxx)	Attribute	8
+54	InequalityDisapper(2,xxxxxx)	Attribute	8
+55	InequalityDisapper(3,xxxxxx)	Attribute	8
+56	Question(1	*1*到起点的路径为?	这就是起点!	0.1	3	2)	0x7fff85f8b2e8
+57	showHelp(加入距离起点最近的点)	Help	9
+58	changeNodeColor(2,RGB(255,0,0))	Animation	9
+59	showHelp(加入边)	Help	10
+60	changeEdgeColor(1,2,RGB(255,0,0))	Animation	10
+61	showCode(3)	Code	11
+62	showHelp(比较距离)	Help	11
+63	showInequality(0,25.5+26.1≥18.6)	Attribute	11
+64	showInequality(1,25.5+25.5≥0)	Attribute	11
+65	showInequality(2,25.5+999999≥25.5)	Attribute	11
+66	showInequality(3,25.5+18.8≥29)	Attribute	11
+67	showHelp(更新到起点的距离)	Help	12
+68	showHelp(本次循环结束)	Help	13
+69	InequalityDisapper(0,xxxxxx)	Attribute	13
+70	InequalityDisapper(1,xxxxxx)	Attribute	13
+71	InequalityDisapper(2,xxxxxx)	Attribute	13
+72	InequalityDisapper(3,xxxxxx)	Attribute	13
+73	Question(1	*1*到起点的路径为?	这就是起点!	0.1	3	2)	0x7fff85f8b2e8
+74	showHelp(加入距离起点最近的点)	Help	14
+75	changeNodeColor(3,RGB(255,0,0))	Animation	14
+76	showHelp(加入边)	Help	15
+77	changeEdgeColor(1,3,RGB(255,0,0))	Animation	15
+78	showCode(3)	Code	16
+79	showHelp(比较距离)	Help	16
+80	showInequality(0,29+12.5≥18.6)	Attribute	16
+81	showInequality(1,29+29≥0)	Attribute	16
+82	showInequality(2,29+18.8≥25.5)	Attribute	16
+83	showInequality(3,29+999999≥29)	Attribute	16
+84	showHelp(更新到起点的距离)	Help	17
+85	showHelp(本次循环结束)	Help	18
+86	InequalityDisapper(0,xxxxxx)	Attribute	18
+87	InequalityDisapper(1,xxxxxx)	Attribute	18
+88	InequalityDisapper(2,xxxxxx)	Attribute	18
+89	InequalityDisapper(3,xxxxxx)	Attribute	18
+
+[2019-03-20T19:56:18.566] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:56:18.566] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:56:18.566] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:56:18.566] [INFO] LOG - *0*
+[2019-03-20T19:56:18.566] [INFO] LOG - *1*
+[2019-03-20T19:56:18.566] [INFO] LOG - dijkstra
+[2019-03-20T19:56:18.568] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:56:19.007] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*2*在本次循环后到起点的距离为？	826.1	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	将要加入的点是？	*1*	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	showHelp(加入距离起点最近的点)	Help	16
+75	changeNodeColor(3,RGB(255,0,0))	Animation	16
+76	showHelp(加入边)	Help	17
+77	changeEdgeColor(2,3,RGB(255,0,0))	Animation	17
+78	showCode(3)	Code	18
+79	showHelp(比较距离)	Help	18
+80	showInequality(0,1894.3+1950.3≥0)	Attribute	18
+81	showInequality(1,1894.3+839≥1174.5)	Attribute	18
+82	showInequality(2,1894.3+1068.2≥826.1)	Attribute	18
+83	showInequality(3,1894.3+999999≥1894.3)	Attribute	18
+84	showHelp(更新到起点的距离)	Help	19
+85	showHelp(本次循环结束)	Help	20
+86	InequalityDisapper(0,xxxxxx)	Attribute	20
+87	InequalityDisapper(1,xxxxxx)	Attribute	20
+88	InequalityDisapper(2,xxxxxx)	Attribute	20
+89	InequalityDisapper(3,xxxxxx)	Attribute	20
+
+[2019-03-20T19:57:57.930] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:57:57.930] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:57:57.930] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:57:57.930] [INFO] LOG - *0*
+[2019-03-20T19:57:57.930] [INFO] LOG - *1*
+[2019-03-20T19:57:57.930] [INFO] LOG - dijkstra
+[2019-03-20T19:57:57.932] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:57:59.003] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*1*在本次循环后到起点的距离为？	1174.5	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	*1*在本次循环后到起点的距离为？	1174.5	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	16
+75	showHelp(加入距离起点最近的点)	Help	17
+76	changeNodeColor(3,RGB(255,0,0))	Animation	17
+77	showHelp(加入边)	Help	18
+78	changeEdgeColor(2,3,RGB(255,0,0))	Animation	18
+79	showCode(3)	Code	19
+80	showHelp(比较距离)	Help	19
+81	showInequality(0,1894.3+1950.3≥0)	Attribute	19
+82	showInequality(1,1894.3+839≥1174.5)	Attribute	19
+83	showInequality(2,1894.3+1068.2≥826.1)	Attribute	19
+84	showInequality(3,1894.3+999999≥1894.3)	Attribute	19
+85	showHelp(更新到起点的距离)	Help	20
+86	showHelp(本次循环结束)	Help	21
+87	InequalityDisapper(0,xxxxxx)	Attribute	21
+88	InequalityDisapper(1,xxxxxx)	Attribute	21
+89	InequalityDisapper(2,xxxxxx)	Attribute	21
+90	InequalityDisapper(3,xxxxxx)	Attribute	21
+
+[2019-03-20T19:59:23.601] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T19:59:23.601] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T19:59:23.601] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T19:59:23.601] [INFO] LOG - *0*
+[2019-03-20T19:59:23.601] [INFO] LOG - *1*
+[2019-03-20T19:59:23.601] [INFO] LOG - dijkstra
+[2019-03-20T19:59:23.604] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T19:59:23.612] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	16
+75	showHelp(加入距离起点最近的点)	Help	17
+76	changeNodeColor(3,RGB(255,0,0))	Animation	17
+77	showHelp(加入边)	Help	18
+78	changeEdgeColor(2,3,RGB(255,0,0))	Animation	18
+79	showCode(3)	Code	19
+80	showHelp(比较距离)	Help	19
+81	showInequality(0,1894.3+1950.3≥0)	Attribute	19
+82	showInequality(1,1894.3+839≥1174.5)	Attribute	19
+83	showInequality(2,1894.3+1068.2≥826.1)	Attribute	19
+84	showInequality(3,1894.3+999999≥1894.3)	Attribute	19
+85	showHelp(更新到起点的距离)	Help	20
+86	showHelp(本次循环结束)	Help	21
+87	InequalityDisapper(0,xxxxxx)	Attribute	21
+88	InequalityDisapper(1,xxxxxx)	Attribute	21
+89	InequalityDisapper(2,xxxxxx)	Attribute	21
+90	InequalityDisapper(3,xxxxxx)	Attribute	21
+
+[2019-03-20T20:16:17.661] [INFO] LOG - [["武汉市","北京市",1174.5],["武汉市","上海市",826.1],["武汉市","大连市",1950.3],["北京市","上海市",1224.8],["北京市","大连市",839],["上海市","大连市",1068.2]]
+[2019-03-20T20:16:17.662] [INFO] LOG - [["武汉市",114,30],["北京市",116,39],["上海市",121,31],["大连市",121,38]]
+[2019-03-20T20:16:17.662] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T20:16:17.662] [INFO] LOG - 武汉市
+[2019-03-20T20:16:17.662] [INFO] LOG - 北京市
+[2019-03-20T20:16:17.662] [INFO] LOG - DFS
+[2019-03-20T20:16:17.666] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  武汉市
+[2019-03-20T20:16:17.863] [INFO] LOG - exec error: 
+[2019-03-20T20:16:17.863] [ERROR] LOG - ERROR Error: error
+    at exec (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/routes/index.js:122:16)
+    at ChildProcess.exithandler (child_process.js:282:5)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+[2019-03-20T20:16:29.226] [ERROR] LOG - Not Found /data
+[2019-03-20T20:16:32.608] [ERROR] LOG - Not Found /data
+[2019-03-20T20:17:26.558] [ERROR] LOG - Not Found /data
+[2019-03-20T20:19:14.399] [INFO] LOG - [["武汉市","武汉市育才小学",3.9],["武汉市","武汉实验外国语学校(小学部)",19.1],["武汉市","武汉市光谷第二小学",28.8],["武汉市育才小学","武汉实验外国语学校(小学部)",18.6],["武汉市育才小学","武汉市光谷第二小学",26.1],["武汉实验外国语学校(小学部)","武汉市光谷第二小学",25.5]]
+[2019-03-20T20:19:14.399] [INFO] LOG - [["武汉市",114,30],["武汉市育才小学",114,30],["武汉实验外国语学校(小学部)",114,30],["武汉市光谷第二小学",114,30]]
+[2019-03-20T20:19:14.399] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T20:19:14.399] [INFO] LOG - 武汉实验外国语学校(小学部)
+[2019-03-20T20:19:14.399] [INFO] LOG - 武汉市育才小学
+[2019-03-20T20:19:14.399] [INFO] LOG - DFS
+[2019-03-20T20:19:14.401] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  武汉实验外国语学校(小学部)
+[2019-03-20T20:19:14.408] [INFO] LOG - exec error: /bin/sh: -c: line 0: syntax error near unexpected token `('
+/bin/sh: -c: line 0: `/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  武汉实验外国语学校(小学部)'
+
+[2019-03-20T20:19:14.408] [ERROR] LOG - ERROR Error: error
+    at exec (/home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/routes/index.js:122:16)
+    at ChildProcess.exithandler (child_process.js:282:5)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Socket.stream.socket.on (internal/child_process.js:346:11)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at Pipe._handle.close [as _onclose] (net.js:567:12)
+[2019-03-20T20:28:06.542] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T20:28:06.542] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T20:28:06.542] [INFO] LOG - [[4],[-1000,1000],[1000,-1000]]
+[2019-03-20T20:28:06.542] [INFO] LOG - *0*
+[2019-03-20T20:28:06.542] [INFO] LOG - *1*
+[2019-03-20T20:28:06.542] [INFO] LOG - dijkstra
+[2019-03-20T20:28:06.554] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T20:28:06.565] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	4
+40	showHelp(加入距离起点最近的点)	Help	5
+41	changeNodeColor(2,RGB(255,0,0))	Animation	5
+42	showHelp(加入边)	Help	6
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	6
+44	showCode(3)	Code	7
+45	showHelp(比较距离)	Help	7
+46	showInequality(0,826.1+826.1≥0)	Attribute	7
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	7
+48	showInequality(2,826.1+999999≥826.1)	Attribute	7
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	7
+50	showHelp(更新到起点的距离)	Help	8
+51	changeNodeDist(3,1894.3)	Animation	8
+52	showHelp(本次循环结束)	Help	9
+53	InequalityDisapper(0,xxxxxx)	Attribute	9
+54	InequalityDisapper(1,xxxxxx)	Attribute	9
+55	InequalityDisapper(2,xxxxxx)	Attribute	9
+56	InequalityDisapper(3,xxxxxx)	Attribute	9
+57	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	10
+58	showHelp(加入距离起点最近的点)	Help	11
+59	changeNodeColor(1,RGB(255,0,0))	Animation	11
+60	showHelp(加入边)	Help	12
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	12
+62	showCode(3)	Code	13
+63	showHelp(比较距离)	Help	13
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	13
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	13
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	13
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	13
+68	showHelp(更新到起点的距离)	Help	14
+69	showHelp(本次循环结束)	Help	15
+70	InequalityDisapper(0,xxxxxx)	Attribute	15
+71	InequalityDisapper(1,xxxxxx)	Attribute	15
+72	InequalityDisapper(2,xxxxxx)	Attribute	15
+73	InequalityDisapper(3,xxxxxx)	Attribute	15
+74	Question(1	*3*在本次循环后到起点的距离为？	1894.3	0.1	3	2)	16
+75	showHelp(加入距离起点最近的点)	Help	17
+76	changeNodeColor(3,RGB(255,0,0))	Animation	17
+77	showHelp(加入边)	Help	18
+78	changeEdgeColor(2,3,RGB(255,0,0))	Animation	18
+79	showCode(3)	Code	19
+80	showHelp(比较距离)	Help	19
+81	showInequality(0,1894.3+1950.3≥0)	Attribute	19
+82	showInequality(1,1894.3+839≥1174.5)	Attribute	19
+83	showInequality(2,1894.3+1068.2≥826.1)	Attribute	19
+84	showInequality(3,1894.3+999999≥1894.3)	Attribute	19
+85	showHelp(更新到起点的距离)	Help	20
+86	showHelp(本次循环结束)	Help	21
+87	InequalityDisapper(0,xxxxxx)	Attribute	21
+88	InequalityDisapper(1,xxxxxx)	Attribute	21
+89	InequalityDisapper(2,xxxxxx)	Attribute	21
+90	InequalityDisapper(3,xxxxxx)	Attribute	21
+
+[2019-03-20T20:33:41.871] [INFO] LOG - *********************************
+[2019-03-20T20:33:41.877] [INFO] LOG - [START] multi process
+[2019-03-20T20:33:41.877] [INFO] LOG - [matser] master start
+[2019-03-20T20:33:42.856] [INFO] LOG - [worker] worker start : 4
+[2019-03-20T20:33:42.875] [INFO] LOG - [master] listening : worker:4, pid:29856, address:null, port:3001
+[2019-03-20T20:33:42.883] [INFO] LOG - [worker] worker start : 1
+[2019-03-20T20:33:42.891] [INFO] LOG - [master] listening : worker:1, pid:29845, address:null, port:3001
+[2019-03-20T20:33:42.895] [INFO] LOG - [worker] worker start : 2
+[2019-03-20T20:33:42.902] [INFO] LOG - [master] listening : worker:2, pid:29846, address:null, port:3001
+[2019-03-20T20:33:42.908] [INFO] LOG - [worker] worker start : 3
+[2019-03-20T20:33:42.913] [INFO] LOG - [master] listening : worker:3, pid:29851, address:null, port:3001
+[2019-03-20T20:34:42.945] [INFO] LOG - [["*0*","*1*",1174.5],["*0*","*2*",826.1],["*0*","*3*",1950.3],["*1*","*2*",1224.8],["*1*","*3*",839],["*2*","*3*",1068.2]]
+[2019-03-20T20:34:42.945] [INFO] LOG - [["*0*",114,30],["*1*",116,39],["*2*",121,31],["*3*",121,38]]
+[2019-03-20T20:34:42.945] [INFO] LOG - [[61],[-1000,1000],[1000,-1000]]
+[2019-03-20T20:34:42.945] [INFO] LOG - *0*
+[2019-03-20T20:34:42.945] [INFO] LOG - *1*
+[2019-03-20T20:34:42.945] [INFO] LOG - dijkstra
+[2019-03-20T20:34:42.982] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/dijkstra /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *0*
+[2019-03-20T20:34:43.008] [INFO] LOG - 1	showCode(1)	Code	1
+2	showHelp(初始化每个点、每条边的颜色)	Help	1
+3	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+13	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+14	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+15	changeNodeColor(0,RGB(91,155,213))	Animation	1
+16	changeNodeColor(1,RGB(91,155,213))	Animation	1
+17	changeNodeColor(2,RGB(91,155,213))	Animation	1
+18	changeNodeColor(3,RGB(91,155,213))	Animation	1
+19	showHelp(初始化每条边的长度、每个点到起点的距离)	Help	2
+20	changeEdgeLength(0,1,1174.5)	Animation	2
+21	changeEdgeLength(0,2,826.1)	Animation	2
+22	changeEdgeLength(0,3,1950.3)	Animation	2
+23	changeEdgeLength(1,0,1174.5)	Animation	2
+24	changeEdgeLength(1,2,1224.8)	Animation	2
+25	changeEdgeLength(1,3,839)	Animation	2
+26	changeEdgeLength(2,0,826.1)	Animation	2
+27	changeEdgeLength(2,1,1224.8)	Animation	2
+28	changeEdgeLength(2,3,1068.2)	Animation	2
+29	changeEdgeLength(3,0,1950.3)	Animation	2
+30	changeEdgeLength(3,1,839)	Animation	2
+31	changeEdgeLength(3,2,1068.2)	Animation	2
+32	changeNodeDist(0,0)	Animation	2
+33	changeNodeDist(1,1174.5)	Animation	2
+34	changeNodeDist(2,826.1)	Animation	2
+35	changeNodeDist(3,1950.3)	Animation	2
+36	showCode(2)	Code	3
+37	showHelp(起点加入最短路径)	Help	3
+38	changeNodeColor(0,RGB(255,0,0))	Animation	3
+39	Question(1	*0*到起点的路径为?	这就是起点!	0.1	3	2)	0x7ffe6beb6fb8
+40	showHelp(加入距离起点最近的点)	Help	4
+41	changeNodeColor(2,RGB(255,0,0))	Animation	4
+42	showHelp(加入边)	Help	5
+43	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5
+44	showCode(3)	Code	6
+45	showHelp(比较距离)	Help	6
+46	showInequality(0,826.1+826.1≥0)	Attribute	6
+47	showInequality(1,826.1+1224.8≥1174.5)	Attribute	6
+48	showInequality(2,826.1+999999≥826.1)	Attribute	6
+49	showInequality(3,826.1+1068.2<1950.3)	Attribute	6
+50	showHelp(更新到起点的距离)	Help	7
+51	changeNodeDist(3,1894.3)	Animation	7
+52	showHelp(本次循环结束)	Help	8
+53	InequalityDisapper(0,xxxxxx)	Attribute	8
+54	InequalityDisapper(1,xxxxxx)	Attribute	8
+55	InequalityDisapper(2,xxxxxx)	Attribute	8
+56	InequalityDisapper(3,xxxxxx)	Attribute	8
+57	Question(1	将要加入的点是？	*1*	0.1	3	2)	9
+58	showHelp(加入距离起点最近的点)	Help	10
+59	changeNodeColor(1,RGB(255,0,0))	Animation	10
+60	showHelp(加入边)	Help	11
+61	changeEdgeColor(0,1,RGB(255,0,0))	Animation	11
+62	showCode(3)	Code	12
+63	showHelp(比较距离)	Help	12
+64	showInequality(0,1174.5+1174.5≥0)	Attribute	12
+65	showInequality(1,1174.5+999999≥1174.5)	Attribute	12
+66	showInequality(2,1174.5+1224.8≥826.1)	Attribute	12
+67	showInequality(3,1174.5+839≥1894.3)	Attribute	12
+68	showHelp(更新到起点的距离)	Help	13
+69	showHelp(本次循环结束)	Help	14
+70	InequalityDisapper(0,xxxxxx)	Attribute	14
+71	InequalityDisapper(1,xxxxxx)	Attribute	14
+72	InequalityDisapper(2,xxxxxx)	Attribute	14
+73	InequalityDisapper(3,xxxxxx)	Attribute	14
+74	showHelp(加入距离起点最近的点)	Help	15
+75	changeNodeColor(3,RGB(255,0,0))	Animation	15
+76	showHelp(加入边)	Help	16
+77	changeEdgeColor(2,3,RGB(255,0,0))	Animation	16
+78	showCode(3)	Code	17
+79	showHelp(比较距离)	Help	17
+80	showInequality(0,1894.3+1950.3≥0)	Attribute	17
+81	showInequality(1,1894.3+839≥1174.5)	Attribute	17
+82	showInequality(2,1894.3+1068.2≥826.1)	Attribute	17
+83	showInequality(3,1894.3+999999≥1894.3)	Attribute	17
+84	showHelp(更新到起点的距离)	Help	18
+85	showHelp(本次循环结束)	Help	19
+86	InequalityDisapper(0,xxxxxx)	Attribute	19
+87	InequalityDisapper(1,xxxxxx)	Attribute	19
+88	InequalityDisapper(2,xxxxxx)	Attribute	19
+89	InequalityDisapper(3,xxxxxx)	Attribute	19
+
+[2019-03-20T20:34:43.290] [INFO] LOG - ::1 - POST /data HTTP/1.1 200 - - 93.837 ms
+
+[2019-03-20T20:35:08.752] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 28.539 ms
+
+[2019-03-20T20:35:16.781] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 23.782 ms
+
+[2019-03-20T20:35:23.708] [INFO] LOG - ::1 - POST /code HTTP/1.1 200 579 - 20.707 ms
+
+[2019-03-20T21:13:02.379] [INFO] LOG - [["*0*","*1*",3.9],["*0*","*2*",19.1],["*0*","*3*",25.6],["*1*","*2*",18.6],["*1*","*3*",22.9],["*2*","*3*",28.4]]
+[2019-03-20T21:13:02.379] [INFO] LOG - [["*0*",114,30],["*1*",114,30],["*2*",114,30],["*3*",114,30]]
+[2019-03-20T21:13:02.379] [INFO] LOG - [[61],[-1000,1000],[1000,-1000]]
+[2019-03-20T21:13:02.379] [INFO] LOG - *2*
+[2019-03-20T21:13:02.379] [INFO] LOG - *0*
+[2019-03-20T21:13:02.379] [INFO] LOG - DFS
+[2019-03-20T21:13:02.382] [INFO] LOG - /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/bin/exe/DFS /home/cdz/Code/FrontEnd/algorithm-visualization-for-Mr-Huang/backEnd/data/123456/  *2*
+[2019-03-20T21:13:02.391] [INFO] LOG - 1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1
+2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1
+3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1
+4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1
+5	changeEdgeColor(0,3,RGB(10,10,10))	Animation	1
+6	changeEdgeColor(3,0,RGB(10,10,10))	Animation	1
+7	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1
+8	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1
+9	changeEdgeColor(1,3,RGB(10,10,10))	Animation	1
+10	changeEdgeColor(3,1,RGB(10,10,10))	Animation	1
+11	changeEdgeColor(2,3,RGB(10,10,10))	Animation	1
+12	changeEdgeColor(3,2,RGB(10,10,10))	Animation	1
+13	changeNodeColor(0,RGB(91,155,213))	Animation	1
+14	changeNodeColor(1,RGB(91,155,213))	Animation	1
+15	changeNodeColor(2,RGB(91,155,213))	Animation	1
+16	changeNodeColor(3,RGB(91,155,213))	Animation	1
+17	changeNodeColor(4,RGB(91,155,213))	Animation	1
+18	changeNodeColor(5,RGB(91,155,213))	Animation	1
+19	changeNodeColor(6,RGB(91,155,213))	Animation	1
+20	Question(1	深度优先遍历的结果是？	1203	1.0	3	2)	2
+21	showCode(1)	Code	3
+22	changeNodeColor(2,RGB(255,0,0))	Animation	3
+23	showHelp(访问找到的结点)	Help	3
+24	Question(1	下一个要访问的结点是？	*0*	0.1	3	2)	4
+25	changeEdgeColor(2,0,RGB(255,0,0))	Animation	5
+26	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5
+27	showCode(2)	Code	5
+28	showCode(1)	Code	6
+29	changeNodeColor(0,RGB(255,0,0))	Animation	6
+30	showHelp(访问找到的结点)	Help	6
+31	Question(1	下一个要访问的结点是？	*1*	0.1	3	2)	7
+32	changeEdgeColor(0,1,RGB(255,0,0))	Animation	8
+33	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	8
+34	showCode(2)	Code	8
+35	showCode(1)	Code	9
+36	changeNodeColor(1,RGB(255,0,0))	Animation	9
+37	showHelp(访问找到的结点)	Help	9
+38	Question(1	下一个要访问的结点是？	*3*	0.1	3	2)	10
+39	changeEdgeColor(1,3,RGB(255,0,0))	Animation	11
+40	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	11
+41	showCode(2)	Code	11
+42	showCode(1)	Code	12
+43	changeNodeColor(3,RGB(255,0,0))	Animation	12
+44	showHelp(访问找到的结点)	Help	12
+

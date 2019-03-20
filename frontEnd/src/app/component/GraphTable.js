@@ -6,18 +6,19 @@ let React = require('react');
 //let selectLink;
 
 
-
 //关于显示代码：此组件作为消息订阅者!
 class GraphTable extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             tab: 1,
-            code:'hello cg!'
+            code:'',
+            actions:[]
         };
         this.SELECTED_LINK_COLOR = "#ff0000";
         this.DEFAULT_LINK_COLOR = "#3a6bdb";
         this.onShowCode=this.onShowCode.bind(this);  //绑定消息监听函数
+        this.onShowAction=this.onShowAction.bind(this);  //如果你不绑定方法，那么在事件发生并且精确调用这个方法时，方法内部的this会丢失指向。
     }
    
     render(){
@@ -27,7 +28,9 @@ class GraphTable extends React.Component{
                 <div id="tab">
                     <div style={{backgroundColor:this.state.tab===1?"#999":"#CCC"}} onClick={this.setPTab.bind(this)}>顶点</div>
                     <div style={{backgroundColor:this.state.tab===2?"#999":"#CCC"}} onClick={this.setLTab.bind(this)}>边</div>
-                    <div style={{backgroundColor:this.state.tab===3?"#999":"#CCC"}} onClick={this.setCodeTab.bind(this)}>代码</div>
+                    <div style={{backgroundColor:this.state.tab===3?"#999":"#CCC"}} onClick={this.setMatrixTab.bind(this)}>矩阵</div>
+                    <div style={{backgroundColor:this.state.tab===4?"#999":"#CCC"}} onClick={this.setCodeTab.bind(this)}>代码</div>
+                    <div style={{backgroundColor:this.state.tab===5?"#999":"#CCC"}} onClick={this.setActionTab.bind(this)}>动作</div>
                 </div>
                 <div id="tabContent">{content}</div>
             </div>
@@ -36,12 +39,19 @@ class GraphTable extends React.Component{
 
     ///当GraphSVG组件传递代码过来时，调整tab状态，使其处于代码显示栏，同时更新代码
     onShowCode(code){  
-        this.setState({tab:3});
+        //this.setState({tab:4});  //更新tab状态则会自动跳转到代码栏
         this.setState({code:code});
     }
 
+    onShowAction(actions)
+    {
+        //this.setState({tab:5});
+        this.setState({actions:actions});
+    }
+    
     componentDidMount(){
-        eventProxy.on(window.showCode,this.onShowCode);  //window.showCode见index.js
+        eventProxy.on(window.showCode,this.onShowCode);     //window.showCode见index.js
+        eventProxy.on(window.showAction,this.onShowAction);  
     }
 
     //点击“顶点”
@@ -57,13 +67,30 @@ class GraphTable extends React.Component{
         });
     }
 
-    //点击“代码”
-    setCodeTab(){
+    //点击"矩阵"
+    setMatrixTab()
+    {
         this.setState({
-            tab: 3
+            tab:3
         });
     }
 
+    //点击“代码”
+    setCodeTab(){
+        this.setState({
+            tab:4
+        });
+    }
+
+    //点击"动作"
+    setActionTab()
+    {
+        this.setState({
+            tab:5
+        });
+    }
+
+    //点击菜单后渲染
     setContent( {node, link} ){
         switch(this.state.tab){
             case 1:
@@ -75,11 +102,18 @@ class GraphTable extends React.Component{
                 return this.renderLink(link);
                 break;
             case 3:
+                return this.renderMatrix(node,link);
+                break;
+            case 4:
                 return this.renderCode();
+                break;
+            case 5:
+                return this.renderAction();
                 break;
         }
         return "ERROR";
     }
+
     renderPoint(nodes){
         let td = nodes.map(node=>{
             return (
@@ -105,7 +139,7 @@ class GraphTable extends React.Component{
             </table>
         );
     }
-    renderLink(links){
+    renderLink(links){     //index应该是link元素在links中的索引
         let td = links.map((link, index)=>{
             let ifVisible = link.polyline.isVisible();
             let color = link.polyline.getStrokeColor();
@@ -119,6 +153,7 @@ class GraphTable extends React.Component{
                 </tr>
             );
         });
+
         return (
             <table>
                 <thead>
@@ -134,15 +169,83 @@ class GraphTable extends React.Component{
             </table>
         );
     }
+   
 
-    //渲染代码，使用layer  (iframe高度无法使用相对高度，应为tabContent的限制)
-    renderCode(){
+    renderMatrix(nodes,links)
+    {
+        const nodataGrid=<th></th>;               //空格
+        let horizonMatrxHead=nodes.map(node=>{　　//第一排表头
+                return(
+                    <th>{node.name}</th>
+                );
+        });
+        let maxtrixContent=nodes.map(node=>{     //表格内容
+            let headName=<th>{node.name}</th>;
+        
+            let name1=node.name;
+            let dists=nodes.map(node=>{
+                let dist;
+                let flag=0;
+                for(var i=0;i<links.length;i++)
+                {
+                    if((name1==links[i].node1.name && node.name==links[i].node2.name)||(name1==links[i].node2.name && node.name==links[i].node1.name))
+                    {
+                        dist=links[i].dis;
+                        flag=1;
+                    }
+                }
+                if(flag==1)                //两个点相连
+                    return(
+                        <td align="center">{dist}</td>
+                    );
+                else
+                        return(
+                            <td align="center">∞</td>
+                        );
+            });
+            return(
+                <tr>
+                {headName}
+                {dists}
+                </tr>
+            );
+        });
+
         return(
-           
-            <textarea   cols="80" rows="30" value={this.state.code} autoFocus readOnly></textarea>
-           
+            <table>
+              {nodataGrid} 
+              {horizonMatrxHead}
+              {maxtrixContent}
+            </table>
         );
     }
+
+    renderCode(){     //渲染代码，使用layer  (iframe高度无法使用相对高度，应为tabContent的限制)
+        return(
+            <textarea   cols="80" rows="30" value={this.state.code} autoFocus readOnly></textarea>
+        );
+    }
+   
+    renderAction()
+    {
+        let actions=this.state.actions;           //因为actions中有重复的动作，因此下面需要key(index)加以区分！
+        console.log(actions);
+        let actionContent=actions.map((action,index)=>{
+            return(
+               <tr key={index}>
+                   <td align="center">
+                    {action}
+                   </td>
+               </tr>
+            );
+        });
+        return(
+            <table >
+                {actionContent}
+            </table>
+        );
+    }
+
     highlightLink(link){
         return function(event){
             let links = this.props.link;
@@ -153,6 +256,7 @@ class GraphTable extends React.Component{
             this.props.updateState(null, links);
         }
     }
+
     setLink(link){
         return function(event){
             let links = this.props.link;

@@ -18,6 +18,7 @@ class Panel extends React.Component{
         };
     }
 
+    
     //注：　...this.props，props提供的语法糖，可以将父组件中的所有属性复制给子组件
     render(){
         return (

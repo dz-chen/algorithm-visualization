@@ -1,9 +1,11 @@
-for (int w = 0; w <nver; w++)
-{
-       if (!Visited[w])
-            if (Dist[w] < min)
-            {
-                v = w;
-                min = Dist[w];
-             }
-Visited[v] = 1;//选中
+void DFS(Graph& G, int v)
+ {
+	visited[v] = 1;
+	for (int w = FirstAdjVex(G, v); w != -1; w = NextAdjVex(G, v, w))
+	{
+		if (!visited[w])
+		{
+			DFS(G, w);
+		}
+	}
+}

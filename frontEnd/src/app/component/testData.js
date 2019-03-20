@@ -1,6 +1,4 @@
 
-let data = {"code":1,"steps":["1	changeEdgeColor(0,1,RGB(10,10,10))	Animation	1","2	changeEdgeColor(1,0,RGB(10,10,10))	Animation	1","3	changeEdgeColor(0,2,RGB(10,10,10))	Animation	1","4	changeEdgeColor(2,0,RGB(10,10,10))	Animation	1","5	changeEdgeColor(1,2,RGB(10,10,10))	Animation	1","6	changeEdgeColor(2,1,RGB(10,10,10))	Animation	1","7	changeNodeColor(0,RGB(91,155,213))	Animation	1","8	changeNodeColor(1,RGB(91,155,213))	Animation	1","9	changeNodeColor(2,RGB(91,155,213))	Animation	1","10	changeNodeColor(3,RGB(91,155,213))	Animation	1","11	Question(1	深度优先遍历的结果是？	102	1.000000	3	2)	2","12	showCode(1)	Code	2","13	changeNodeColor(1,RGB(255,0,0))	Animation	2","14	showHelp(访问找到的结点)	Help	2","15	Question(1	下一个要访问的结点是？	*0*	0.100000	3	2)	3","16	changeEdgeColor(1,0,RGB(255,0,0))	Animation	3","17	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	3","18	showCode(2)	Code	3","19	showCode(1)	Code	4","20	changeNodeColor(0,RGB(255,0,0))	Animation	4","21	showHelp(访问找到的结点)	Help	4","22	Question(1	下一个要访问的结点是？	*2*	0.100000	3	2)	5","23	changeEdgeColor(0,2,RGB(255,0,0))	Animation	5","24	showHelp(对刚访问的结点进行扫描，寻找其邻接点中没有被访问的结点，找到后对其进行深度优先遍历)	Help	5","25	showCode(2)	Code	5","26	showCode(1)	Code	6","27	changeNodeColor(2,RGB(255,0,0))	Animation	6","28	showHelp(访问找到的结点)	Help	6"]};
 
-
-//console.log(data)
-export default data;
+let str="0123";
+console.log(str.length);

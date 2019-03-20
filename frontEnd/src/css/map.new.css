@@ -272,7 +272,7 @@
     height: 30px;
     position: absolute;
     bottom: -31px;  /*bottom 属性规定元素的底部边缘。该属性定义了定位元素下外边距边界与其包含块下边界之间的偏移*/
-    right: 0;       /*right 属性规定元素的右边缘。该属性定义了定位元素右外边距边界与其包含块右边界之间的偏移*/
+    right:0;       /*right 属性规定元素的右边缘。该属性定义了定位元素右外边距边界与其包含块右边界之间的偏移*/
     background-color: gray;
     display: flex;
     flex-direction: row;
@@ -289,10 +289,11 @@
 #tool #speed{ /**/
     display: inline-block;
     height: 10px;
-    width: 80px;
+    width: 60px;
     cursor: pointer;
     position: relative;
     background-color: white;
+    float:left;
 }
 #tool #speed > #speedValue{
     position: absolute;
@@ -323,6 +324,13 @@
 #tool #next{
     background-image: url(../assets/next.png);
     background-size: 100% 100%;
+}
+
+#tool #reset{
+    border-radius:1px;
+    background-image: url(../assets/reset.png);
+    background-size: 100% 100%;
+
 }
 /*********************控制条-结束*********************/
 
@@ -357,7 +365,7 @@ svg g, svg circle, svg text {
 }
 #question{
     font-size: 13px;
-    width: 100px !important;
+    width: 50px !important;
 }
 
 

@@ -18,7 +18,7 @@ let $=window.jQuery;
 let stepData = null;
 let _name = [];     //存储点名
 //let STEP_COUNT = 0;　　　//学长以STEP_COUNT记录每一个动作的编号（是动作不是帧！！）->改为每一帧的编号
-let actionStep={};        //用于存储步骤动作信息,eg:   {3:[3,4,5,6]}表示第三帧包含动作3、4、５＼６
+let actionStep={};        //用于存储步骤动作信息,eg:   {3:[3,4,5,6]}表示第三帧包含动作3、4、５、６
 let STEP_COUNT=1;         //全局记录当前演示的帧数
 window.question = true;
 
@@ -38,7 +38,7 @@ class GraphSVG extends React.Component{
         this.SELECTED_LINK_COLOR = "#ff0000";   //选中的边，红色
         this.SELECTED_NODE_COLOR = "#ff0000";   //选中的点     
        
-        this.path = null;
+        //this.path = null;
 
         this.state.speed = 0.5;
         this.state.play = "stop";
@@ -50,6 +50,7 @@ class GraphSVG extends React.Component{
         this.state.S_NODE_DIS=new Map(); //更新点到起点的距离
         this.state.S_NODE_INFO=new Map(); //更新点旁边的其他信息，如显示不等式
     }
+
     render(){
         this.clcMaxMin();
         let nodes = this.renderNode();
@@ -76,11 +77,24 @@ class GraphSVG extends React.Component{
                     <div id="start" title="开始/暂停" className={controlstate} onClick={this.play.bind(this)}></div>
                     <div id="next" title="下一步" onClick={this.animate_forward.bind(this)}></div>
                     <div id="end" title="结束" onClick={this.stop.bind(this)}></div>
+                    <div id="reset" title="复位" onClick={this.resetColor.bind(this)}></div>
                 </div>
             </div>
         );
     }
 
+    reSet()
+    {    //复位！
+        this.state.speed = 0.5;
+        this.state.play = "stop";
+        this.state.start = "";
+        this.state.end = "";
+        this.state.S_NODE = new Map(); //更新点的颜色;　　　　　　　　　Map是一组键值对的结构，具有极快的查找速度(误以为是Map.js导出的Map类)
+        this.state.S_EDGE = new Map();  //更新边的距离
+        this.state.question= true;
+        this.state.S_NODE_DIS=new Map(); //更新点到起点的距离
+        this.state.S_NODE_INFO=new Map(); //更新点旁边的其他信息，如显示不等式
+    }
     //是否提问状态改变
     checkChange(e){
         window.question = e.target.checked;
@@ -232,6 +246,9 @@ class GraphSVG extends React.Component{
     codeChangeHandler(code){
         eventProxy.trigger(window.showCode,code);
     }
+    actionGetHandler(actions){
+        eventProxy.trigger(window.showAction,actions);
+    }
 
     //执行（包括数据传递给C++以及根据C++回传数据显示），会调用animate
     go(){
@@ -255,13 +272,13 @@ class GraphSVG extends React.Component{
             let index = '*'+(_name.length-1)+'*'
             pointIn.push([index, lng, lat]);
         });
+        pointIn = JSON.stringify(pointIn);
 
         var start_index = '*'+(_name.findIndex(v=>v===this.state.start))+'*';  //找到起点、终点的编号
         var end_index = '*'+(_name.findIndex(v=>v===this.state.end))+'*';
 
 
         globalIn.push([pointIn.length]);     //globalIn代表C++程序输入的参数：点数、？
-        pointIn = JSON.stringify(pointIn);
         globalIn.push([-1000, 1000]);
         globalIn.push([1000, -1000]);
         globalIn = JSON.stringify(globalIn);
@@ -279,7 +296,7 @@ class GraphSVG extends React.Component{
             if(!link.polyline.isVisible())return;
             let n1 = '*'+_name.findIndex(v=>v===link.node1.name)+'*';
             let n2 = '*'+_name.findIndex(v=>v===link.node2.name)+'*';
-            edgeIn.push([n1, n2, parseFloat(link.dis, 10)]);
+                edgeIn.push([n1, n2, parseFloat(link.dis, 10)]);
         });
         edgeIn = JSON.stringify(edgeIn);
 //////////////////////////////////////////////////////
@@ -296,7 +313,8 @@ class GraphSVG extends React.Component{
                 stepData = json;  //steps的数据是各个动作的含义，比如：	changeNodeColor(2,RGB(255,0,0))	Animation	8
                 layer.closeAll();
                 
-                //先读一遍数据，记录每一帧对应的动作编号，便于快进、返回
+                let actions=[];
+                //先读一遍数据，记录每一帧对应的动作编号，便于快进、返回;   同时记录动作内容，用于组件通信
                 for(var i=0;i<stepData.steps.length-1;i++){  //暂未搞懂为什么多了一条动作？？？
                     //得到该动作对应帧的编号
                     var stepTemp=stepData.steps[i].split('\t')[3];    
@@ -311,8 +329,9 @@ class GraphSVG extends React.Component{
                         actionStep[stepTemp]=[];
                         actionStep[stepTemp].push(i);
                     }
+                    actions.push(stepData.steps[i].split('\t')[1]);   //存储动作内容
                 }
-
+                that.actionGetHandler(actions);                            //动作内容传递给Graphtable组件           
 
                 // 开始动画
                 that.animate();   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!
@@ -416,12 +435,45 @@ class GraphSVG extends React.Component{
                 }
                 else if(step.types[i]==="Question" && window.question){
                     let que = step.infos[i][2];
-                    let ans = step.infos[i][3];
-                    if(ans[0]==="*"){
+                    if(que[0]==="*")                    //打个补丁，针对dijkstra提问为：*1*在本次循环后到起点的距离为？　的情况
+                    {
+                       que=que.replace(/\*/g,"");
+                       que=que.replace(que[0],_name[que[0]]);
+                    }
+                    let ans = step.infos[i][3];   
+                    if(ans[0]==="*"){                    //标准答案，返回的是 *2* 类型
                         ans = ans.replace(/\*/g, "");
                         ans = _name[ans];
+                        return this.ask(que, ans);   
                     }
-                    return this.ask(que, ans);   
+                    else                                //答案不只一个地点(默认１０个和以内),数字转化为文字路径
+                    {
+                        if(Object.is(window.algo,"dijkstra"))      //dj数字答案直接返回
+                            return this.ask(que,ans);
+                        let pathNum=parseInt(ans);
+                        let path_num=[];
+                        let ans_length=ans.length;
+                        while(ans_length>=1)
+                        {
+                            path_num.push(pathNum%10);
+                            pathNum=parseInt(pathNum/10);   //js竟然不能整除!!!
+                            ans_length--;
+                        }
+
+                        let path_str;
+                        for(let i=path_num.length-1;i>=0;i--)
+                        {
+                            if(i==path_num.length-1)
+                                path_str=_name[path_num[i]]+"->";
+                            else if(i==0)   
+                                path_str=path_str+_name[path_num[i]];
+                            else
+                                path_str=path_str+_name[path_num[i]]+"->";
+
+                        }
+                        return this.ask(que,path_str);
+                    }
+                 
                 }
                 else if(step.types[i]==="showInequality"){
                     var params=step.infos[i][1].split('(')[1].split(')')[0].split(',');
@@ -551,7 +603,7 @@ class GraphSVG extends React.Component{
     }
 
     //提问
-    ask(que, msg){
+    ask(que, msg){             //msg是标准答案(转换后的)
         clearTimeout(window.timer);
         let that = this;
         window.layer.prompt({title: que}, function(text, index){
@@ -573,62 +625,15 @@ class GraphSVG extends React.Component{
                     that.animate();
                 }, 1100);
             }else{
+                window.layer.msg('答对了！', {time: 1000});
                 that.animate();
             }
         } );
     }
 
-    showCode(msg){
-        let content = "";
-        if(msg === 1){
-            content = 
-            `
-        <p style="white-space:pre-wrap !important; padding: 30px;">    void DFS(Graph& G, int v)
-        {
-            <span style="color: red">visited[v] = 1;	</span>
-            for (int w = FirstAdjVex(G, v); w != -1; w = NextAdjVex(G, v, w))
-            {
-                if (!visited[w])
-                {
-                    DFS(G, w);
-                }
-            }
-        }</p>
-            `
-        }else if(msg === 2){
-            content = 
-            `
-        <p style="white-space:pre-wrap !important; padding: 30px;">    void DFS(Graph& G, int v)
-        {
-            visited[v] = 1;	
-            <span style="color: red">for (int w = FirstAdjVex(G, v); w != -1; w = NextAdjVex(G, v, w))
-            {
-                if (!visited[w])
-                {
-                    DFS(G, w);
-                }
-            }</span>
-        }</p>
-            `
-        }
-        let that = this;
-        //页面层
-        window.layer.open({
-            type: 1,
-            area: ['800px', '400px'], //宽高
-            content: content,
-            closeBtn: false,
-            title: '提示',
-            btn: '关闭',
-            yes: function(){
-                layer.closeAll();
-                that.animate();
-            }            
-        });
-    }
+  
 
-
-   //****************************************************dd by cdz
+   //**************************************************** by cdz
     //执行动作：根据STEP_COUNT执行！！！
     //注意：当Question、showHelp、showCode时，之所以return是为了结束当前函数，不再执行当前函数末尾的animate
     //因为在else if中会使用layer，内部接着使用了setTimeout和animate继续下去
@@ -643,24 +648,25 @@ class GraphSVG extends React.Component{
    
 
     STEP_COUNT--;
-    let back_step = this.getStep(STEP_COUNT);
+    let back_step = this.getStep(STEP_COUNT);              //获取上一帧的信息
     if(back_step===null){
         this.stop();
         return;
     }
 
-    let links = this.props.link;  //将要更新的元素
+    let links = this.props.link;                          //将要更新的元素
     let S_NODE = this.state.S_NODE;
     let S_EDGE=this.state.S_EDGE;
     let S_NODE_DIS=this.state.S_NODE_DIS;
     let S_NODE_INFO=this.state.S_NODE_INFO;
 
-    for(var i=0;i<back_step.types.length;i++){
+    for(var i=0;i<back_step.types.length;i++){           //扫描一帧的内容
+        console.log(back_step.infos[i])
         if(back_step.types[i]==="changeEdgeColor"){
             let params = back_step.infos[i][1].split("(")[1].split(",");
             params.pop();
-            let color =back_step.infos[i][1].split("RGB")[1];
-            color = this.chooseColor(color);
+            //let color =back_step.infos[i][1].split("RGB")[1];
+            let color = this.INITIAL_LINK_COLOR;                //状态返回，即后退
             
             //改变边的颜色
             let name1 = _name[parseInt(params[0])];
@@ -677,12 +683,13 @@ class GraphSVG extends React.Component{
         else if(back_step.types[i]==="changeNodeColor"){
             let idx = back_step.infos[i][1].split("(")[1].split(",")[0];
             idx = parseInt(idx);
-            let color = back_step.infos[i][1].split("RGB")[1];
-            color = this.chooseColor(color);
+            //let color = back_step.infos[i][1].split("RGB")[1];
+            let color = this.INITIAL_NODE_COLOR;
             let name = _name[idx];  //找到编号对应的点名
             S_NODE.set(name,color);  //S_NODE是键值对，改变name对应点的状态
             //this.setState({S_NODE});
             }
+
         else if(back_step.types[i]==="changeEdgeLength"){
             //"20	changeEdgeLength(0,1,1173)	Animation	2";
             var params=back_step.infos[i][1].split('(')[1].split(')')[0].split(','); //获取点编号、边距离
@@ -716,7 +723,7 @@ class GraphSVG extends React.Component{
         }
         else if(back_step.types[i]==="showHelp"){
             let msg =back_step.infos[i][1].split("(")[1].split(")")[0];
-            layer.msg(msg, {time: this.state.speed *300000 +70});  //无限停留
+            layer.msg(msg, {time: this.state.speed *3000000 +70});  //无限停留
         }
         else if(back_step.types[i]==="Question" && window.question){
             let que = back_step.infos[i][2];
