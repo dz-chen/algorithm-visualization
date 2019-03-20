@@ -188,7 +188,7 @@ class GraphTable extends React.Component{
                 let flag=0;
                 for(var i=0;i<links.length;i++)
                 {
-                    if((name1==links[i].node1.name && node.name==links[i].node2.name)||(name1==links[i].node2.name && node.name==links[i].node1.name))
+                    if(links[i].polyline.isVisible() && (name1==links[i].node1.name && node.name==links[i].node2.name)||(name1==links[i].node2.name && node.name==links[i].node1.name))
                     {
                         dist=links[i].dis;
                         flag=1;
@@ -262,8 +262,10 @@ class GraphTable extends React.Component{
             let links = this.props.link;
             let visible = link.polyline.isVisible();
 
-            if(visible)link.polyline.hide();
-            else link.polyline.show();
+            if(visible)
+                link.polyline.hide();
+            else 
+                link.polyline.show();
 
             this.props.updateState(null, links);
         }

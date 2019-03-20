@@ -77,14 +77,23 @@ class GraphSVG extends React.Component{
                     <div id="start" title="开始/暂停" className={controlstate} onClick={this.play.bind(this)}></div>
                     <div id="next" title="下一步" onClick={this.animate_forward.bind(this)}></div>
                     <div id="end" title="结束" onClick={this.stop.bind(this)}></div>
-                    <div id="reset" title="复位" onClick={this.resetColor.bind(this)}></div>
+                    <div id="reset" title="复位" onClick={this.reSet.bind(this)}></div>
                 </div>
             </div>
         );
     }
 
+    //右上角全部复位！
     reSet()
     {    //复位！
+        stepData = null;
+        _name = [];     //存储点名
+        actionStep={};        //用于存储步骤动作信息,eg:   {3:[3,4,5,6]}表示第三帧包含动作3、4、５、６
+        STEP_COUNT=1;         //全局记录当前演示的帧数
+        window.question = true;
+
+        this.resetColor();
+
         this.state.speed = 0.5;
         this.state.play = "stop";
         this.state.start = "";
@@ -217,7 +226,6 @@ class GraphSVG extends React.Component{
     play(event){
         if(this.state.play==="stop"){
             this.setState({play: "play"});
-            this.resetColor();
             clearTimeout(window.timer);
             this.go();           //go()包含了初始化以及animate
             
@@ -236,8 +244,7 @@ class GraphSVG extends React.Component{
     stop(){
         clearTimeout(window.timer);
         actionStep.STEP_COUNT = 1;
-        //this.setState({play: "stop", start: "", end: "", S_NODE:new Map(), S_EDGE: new Map()});
-        this.setState({play: "stop", start: "", end: "", S_NODE:new Map()});
+        this.setState({play: "stop", start: "", end: ""});
          /* global layer */
         layer.msg("结束");
     }
@@ -253,6 +260,7 @@ class GraphSVG extends React.Component{
     //执行（包括数据传递给C++以及根据C++回传数据显示），会调用animate
     go(){
         if(!this.state.start || !this.state.end){
+            this.setState({play:"stop"});
             return this.stop();
         };
 
