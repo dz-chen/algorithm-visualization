@@ -1,7 +1,11 @@
+const Logger = require('../modules/Logger');
+
 module.exports = (req, res, next) => {
-    if (req.session.username) {
+    //Logger.info(req);
+    if (req.session.userType==0 || req.session.userType==1) {   //req.session中含有userType时才继续执行
         next();
     } else {
+        Logger.info("Authorize授权未通过，重定向到登录界面");
         res.redirect('/users/login');
     }
 };

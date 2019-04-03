@@ -7,31 +7,37 @@ const Authorize = require('../modules/Authorize');
 const User = require('../modules/User');
 
 
-/* GET users listing. */
+/* GET users listing. */   //这里get的'/'应该是指/users/
 router.get('/', Authorize, (req, res) => {
   // const { username } = req.session;
   // res.render('index_vc', { title: `用户 ${username}` });
-  res.redirect('/');
+  Logger.info("执行到了/users/");
+  res.redirect('/');                    //再重定向到/,由index.js处理
 });
 
 /* GET 用户注册 */
-router.get('/reg', (req, res) => {
+router.get('/reg', (req, res) => {    //   /users/reg
   Tools.delUserSession(req);
   res.render('register');
 });
 
-/* GET 用户注册 */
-router.post('/reg', (req, res) => {
-  const { usid, password1, password } = req.body;
+/* POST 用户注册 */
+router.post('/reg', (req, res) => {    
+  const { userid, password1, password } = req.body;
   if (password1 !== password) {
       res.render('register', { info: '密码不一致' });
       return;
   }
-  const name = 'user';
-  User.addUser({ name, usid, password }).then(() => {
+  //const name = 'user';
+  const userType=0;              //测试阶段默认为学生（０），按理应该从req获取
+  User.addUser({userid, password,userType}).then(() => {
       // 成功后保存session即可
-      Tools.saveUserSession(req, { usid, name });
+      Tools.saveUserSession(req, { userid, userType});
       Logger.info('用户注册成功，并登录');
+
+      //为注册成功的用户创建数据库表
+      User.createUserActionTable(userid);
+      User.createUserQuestionTable(userid);
       res.redirect('/users');
   }).catch(() => {
       res.render('register', { info: '注册失败' });
@@ -39,19 +45,20 @@ router.post('/reg', (req, res) => {
 });
 
 
-/* GET 用户登录 */
+/* GET 用户登录,似乎没用上*/
 router.get('/login', (req, res) => {
   Tools.delUserSession(req);
   res.render('login');
 });
 
-/* POST 用户登录 */
+
+/* POST 用户登录,对login.pug里面form的响应*/
 router.post('/login', (req, res) => {
-  const { usid, password } = req.body;
-  User.getUserByUsidAndPass(usid, password).then((data) => {
+  const { userid, password } = req.body;
+  User.getUserTypeByUsidAndPass(userid, password).then((data) => {
       // 登陆成功后保存session即可
-      const { name } = data;
-      Tools.saveUserSession(req, { usid, name });
+      const userType = data;
+      Tools.saveUserSession(req, { userid, userType });        //session会保存到数据库中
       Logger.info('用户登陆成功');
       res.redirect('/users');
   }).catch(() => res.render('login', { info: 'fail' }));

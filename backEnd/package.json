@@ -9,6 +9,7 @@
     "compression": "^1.7.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "ejs": "^2.6.1",
     "encoding": "^0.1.12",
     "express": "~4.16.0",
     "express-mysql-session": "^2.1.0",

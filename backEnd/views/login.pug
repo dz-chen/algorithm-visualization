@@ -9,7 +9,7 @@ html
       height: 100%;
       padding: 0;
       margin: 0;
-      background: url(../images/bg.jpg);
+      background: url(/images/bg.jpg);
       background-size: 100% 100%;
       display: flex;
       justify-content: center;
@@ -64,11 +64,11 @@ html
       margin-top: -14px;
       }
       label[for="username"]::before{
-      background-image: url(../images/用户.png);
+      background-image: url(/images/用户.png);
       background-size: 100% 100%;
       }
       label[for="password"]::before{
-      background-image: url(../images/锁.png);
+      background-image: url(/images/锁.png);
       background-size: 100% 100%;
       }
       form input[type="submit"]{
@@ -90,7 +90,7 @@ html
     #container
       form(method='POST')
         label(for='username')
-          input#username(type='text', name='usid', value='', placeholder='学号')
+          input#username(type='text', name='userid', value='', placeholder='用户名')
         label(for='password')
           input#password(type='password', name='password', value='', placeholder='密码')
         input#submit(type='submit', value='登     录')

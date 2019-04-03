@@ -1,3 +1,5 @@
+//学长学的和User.js重复了!!
+
 // 设置session字段信息
 const setSession = (req, key, value) => {
     req.session[key] = value;
@@ -17,14 +19,14 @@ const delCookie = (res, key) => {
     res.clearCookie(key);
 };
 // 登录后保存会话
-const saveUserSession = (req, { usid, name }) => {
-    setSession(req, 'usid', usid);
-    setSession(req, 'username', name);
+const saveUserSession = (req, { userid,userType }) => {
+    setSession(req, 'userID', userid);
+    setSession(req, 'userType', userType);
 };
 // 退出后删除会话
 const delUserSession = (req) => {
-    delSession(req, 'username');
-    delSession(req, 'usid');
+    delSession(req, 'userID');
+    delSession(req, 'userType');
 };
 
 exports.setSession = setSession;

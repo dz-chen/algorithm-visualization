@@ -8,7 +8,7 @@ module.exports = {
         port: 3306,
         user: 'root',
         password: 'asdf',
-        database: 'graphapp',
+        database: 'algoVisual',
     },
-    secret: '123!@#ASD',
+    secret: 'asdf',     //这个secret是干嘛的？？
 };

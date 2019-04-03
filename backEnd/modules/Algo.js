@@ -1,7 +1,8 @@
 const DB = require('./DB');
+const logger = require('../modules/Logger');
 
 const getAlgos = () => new Promise((resolve, reject) => DB.query({
-    sql: 'SELECT name FROM algo;',
+    sql: 'SELECT algorithm FROM algo;',
     timeout: 10000,
 }).then((data) => {
     if (!data.results || data.results.length < 1) {

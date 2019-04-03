@@ -226,6 +226,7 @@ class GraphTable extends React.Component{
         );
     }
    
+    //渲染动作表
     renderAction()
     {
         let actions=this.state.actions;           //因为actions中有重复的动作，因此下面需要key(index)加以区分！

@@ -8,6 +8,7 @@ const query = sql => new Promise((resolve, reject) => {
     pool.getConnection((err, connection) => {
         if (err) {
             reject(err);
+            logger.info('db query err!');
             return;
         }
         connection.query(sql, (error, results, fields) => {

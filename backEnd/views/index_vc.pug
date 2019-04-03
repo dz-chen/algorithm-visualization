@@ -20,11 +20,12 @@ html
       window.algos = (!{JSON.stringify(algos)}).map(v=>v.name);
     script(type='text/javascript', src='main.js')
     script.
-      let usid = !{JSON.stringify(usid)};
-      if(!usid){
+      let userid = !{JSON.stringify(usid)};
+      alert(userid);
+      if(!userid){
         document.querySelector('#info').style.display = "none";
       }else{
-        document.querySelector('#info>button').innerText = "退出:"+usid;
+        document.querySelector('#info>button').innerText = "退出:"+userid;
         document.querySelector('#info>button').onclick = function(){
           location.href = "/users/logout";
         };

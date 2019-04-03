@@ -7,6 +7,8 @@
 //3. 通过http.createServer 用app来处理请求(此步骤在www中)
 
 
+
+
 //引入模块
 const express = require('express');
 const path = require('path');
@@ -39,7 +41,12 @@ const logStream = new Writable({
 // 设置模板、引擎
 //补充：app.set用来设置内部参数
 app.set('views', path.join(__dirname, 'views')); // 指定模板文件存放位置(_dirname是当前js文件的路径)
+//app.set('views', path.join(__dirname, 'public/build'));          //
 app.set('view engine', 'pug');                   // 设置默认的模板引擎
+//app.engine('html', require('ejs').renderFile);
+//app.set('view engine', 'html');
+
+
 
 //临时补充，用来配置跨域
 app.all('*', function (req, res, next) {
@@ -102,10 +109,13 @@ if (process.env.multi) {
 }
 
 
+//应该是把public目录下的文件夹全部暴露到根目录下！！？
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 1 * 24 * 60 * 60 * 1000 }));  //将public下的静态文件暴露给用户
+//app.use(express.static(path.join(__dirname, 'public/build')))
+
 
 app.use('/', index);       //只要与'/'匹配的请求就转由index路由处理
-app.use('/users', users); 
+app.use('/users', users);  //由users处理
 
 
 

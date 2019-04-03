@@ -311,7 +311,8 @@ class GraphSVG extends React.Component{
         window.layer.load(1, {shade: [0.4,'#fff']});
         $.ajax({
             type:"POST",
-            url:"http://localhost:3001/data",
+            //url:"http://localhost:3001/data",
+            url:"/data",
             data:{edgeIn:edgeIn,pointIn:pointIn,globalIn:globalIn,sName:start_index,eName:end_index,algo:window.algo},
             success: function(json){
                 //console.log(_name);
@@ -427,7 +428,8 @@ class GraphSVG extends React.Component{
                     var codeName="code"+param+".txt";
                     $.ajax({
                         type:"POST",
-                        url:"http://localhost:3001/code",
+                        //url:"http://localhost:3001/code",
+                        url:"/code",
                         data:{codeName:codeName},
                         success: function(code){
                         that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???
@@ -719,7 +721,8 @@ class GraphSVG extends React.Component{
             var codeName="code"+param+".txt";
             $.ajax({
                     type:"POST",
-                    url:"http://localhost:3001/code",
+                    //url:"http://localhost:3001/code",
+                    url:"/code",
                     data:{codeName:codeName},
                     success: function(code){
                     that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???
@@ -768,7 +771,6 @@ class GraphSVG extends React.Component{
 }
 
     
-
    //前进
    animate_forward(){
         //不管处于什么状态，都使其暂停
@@ -838,7 +840,8 @@ class GraphSVG extends React.Component{
             var codeName="code"+param+".txt";
             $.ajax({
                     type:"POST",
-                    url:"http://localhost:3001/code",
+                    //url:"http://localhost:3001/code",
+                    url:"/code",
                     data:{codeName:codeName},
                     success: function(code){
                     that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???

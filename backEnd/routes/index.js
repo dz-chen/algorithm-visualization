@@ -15,9 +15,10 @@ const Algo = require('../modules/Algo');
 /* GET home page. */
 router.get('/', Authorize, (req, res, next) => {
   logger.info(`get index from ${process.pid}`);
-  const { usid } = req.session;
-  Algo.getAlgos().then(algos => {
-      res.render('index_vc', { usid, algos });
+  const userid = req.session.userID;
+  Algo.getAlgos().then(algos => {                //getAlgos()查询结果作为参数给index_vc
+      //res.render('index_vc', { userid, algos});   //渲染index_vc界面
+      res.render('interface', { userid, algos});
   }).catch(err => next(new Error(err)));
 });
 
@@ -108,8 +109,8 @@ router.post('/data',(req, res, next) => {
   logger.info(str);
   //const encodingStr = 'gb2312';   //在linux下cout的编码为utf-8,在wondows下为gbk，没搞懂之前的ＤＦＳ为什么可以使用cp936?????
   var encodingStr='utf-8';
-  //调用C++程序执行
-  //exec() 方法用于检索字符串中的正则表达式的匹配
+  
+  //调用C++程序执行;   exec() 方法用于检索字符串中的正则表达式的匹配
   exec(str, { encoding: 'buffer' }, (error, stdout, stderr) => {
       if (error === null) {
           const resStr = iconv.decode(stdout, encodingStr);
