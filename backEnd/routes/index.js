@@ -12,16 +12,43 @@ const User = require('../modules/User');
 const Algo = require('../modules/Algo');
 
 
-/* GET home page. */
-router.get('/', Authorize, (req, res, next) => {
+/* GET home page. */　　　　//先取消Authorize验证，方便调试！
+router.get('/',(req, res, next) => {
   logger.info(`get index from ${process.pid}`);
   const userid = req.session.userID;
   Algo.getAlgos().then(algos => {                //getAlgos()查询结果作为参数给index_vc
       //res.render('index_vc', { userid, algos});   //渲染index_vc界面
+      logger.info('alogs:');
+      logger.info(algos);
       res.render('interface', { userid, algos});
   }).catch(err => next(new Error(err)));
 });
 
+
+//返回最大的访问编号
+router.get('/getVisitID',(req,res,next)=>{
+    User.getMaxVisitID('123').then((data)=>{
+    res.json({visitID:data});
+    }).catch(()=>{});
+});
+
+
+//返回动作信息（访问记录，而不是具体的动作表）
+router.get('/actions',(req,res,next)=>{
+    User.getActions('123').then((data)=>{
+        //logger.info(data);
+        res.json({actions:data});
+    }).catch(()=>{});
+});
+
+
+//返回问题表中的全部内容
+router.get('/getQues',(req,res,next)=>{
+    User.getQues('123').then((data)=>{
+        //logger.info(data);
+        res.json({ques:data});           //返回问题数据
+    }).catch(()=>{});
+});
 
 //创建EdgeIn,保存到data中(edgeIn.txt)
 function createEdgeIn(edgeIn, path1) {
@@ -33,8 +60,6 @@ function createEdgeIn(edgeIn, path1) {
   console.log('createEdgeIn', a);
   fs.writeFileSync(path1, a);
 }
-
-
 function createPointIn(pointIn, path1) {
   let a = JSON.parse(pointIn);
   a = a.map(v => v.join(' '));
@@ -45,8 +70,6 @@ function createPointIn(pointIn, path1) {
 
   fs.writeFileSync(path1, a);
 }
-
-
 function createGlobalIn(globalIn, path1) {
   let a = JSON.parse(globalIn);
   a = a.map(v => v.join(' '));
@@ -59,17 +82,19 @@ function createGlobalIn(globalIn, path1) {
 }
 
 
-/* 保存答错的题目 */  
-router.post('/collect', Authorize, (req, res, next) => {
-  const { que, ans, msg } = req.body;
-  const { usid } = req.session;
-
-  logger.info(usid);
-  logger.info(que);
-  logger.info(ans);
-  logger.info(msg);
-
-  User.saveQue({ que, ans, msg, usid }).then(() => {
+/* 保存回答的题目 */     //注意，取消回调函数Authorize,否则需要跳转登录不好调试!!!!
+router.post('/collectQue', (req, res, next) => {
+  var { que, ans, msg,type,visitID,actionID} = req.body;
+  type=parseInt(type);
+  visitID=parseInt(visitID);
+  actionID=parseInt(actionID);
+  //const { userid } = req.session;
+  //logger.info(usid);
+  //logger.info(que);
+  //logger.info(ans);
+  //logger.info(msg);
+  const userid='123';
+  User.saveQue({ que, ans, msg,type,visitID,actionID,userid}).then(() => {
       res.end();
   }).catch(err => next(new Error(`error ${err}`)));
 });
@@ -117,6 +142,42 @@ router.post('/data',(req, res, next) => {
           logger.info(resStr);
           const stepsArray = resStr.split('\n');
           stepsArray.filter(v => v.length > 0);
+
+          //动作数据存入数据库动作表
+         /* User.getMaxVisitID('123').then((data)=>{
+                let visitID;
+                if(!data)
+                    visitID=1;
+                else   
+                    visitID=parseInt(data)+1;
+                for(var i=0;i<stepsArray.length-1;i++)           //最后一条数据是空的（不知道为什么）
+                {
+                    var tmpAction=stepsArray[i].split('\t'); //动作编号　　动作内容　动作类型　　帧编号
+                    User.insertAction('123',parseInt(tmpAction[0]),tmpAction[1],tmpAction[2],parseInt(tmpAction[3]),visitID,algo);
+                }
+          }).catch(()=>{});*/
+          //使用批量插入的方式解决单条插入带来的异步问题！！！
+          User.getMaxVisitID('123').then((data)=>{
+            let visitID;
+            if(!data)
+                visitID=1;
+            else   
+                visitID=parseInt(data)+1;
+            var insertVal=new Array();
+            for(var i=0;i<stepsArray.length-1;i++)
+            {
+                var tmpAction=stepsArray[i].split('\t'); //动作编号　　动作内容　动作类型　　帧编号
+                insertVal[i]=new Array();
+                insertVal[i].push(parseInt(tmpAction[0]));
+                insertVal[i].push(tmpAction[1]);
+                insertVal[i].push(tmpAction[2]);
+                insertVal[i].push(parseInt(tmpAction[3]));
+                insertVal[i].push(visitID);
+                insertVal[i].push(algo);
+            }
+                User.insertAction('123',insertVal);
+      }).catch(()=>{});
+
           res.json({ code: 1, steps: stepsArray });
       } else {
           logger.info(`exec error: ${stderr}`);
@@ -124,7 +185,6 @@ router.post('/data',(req, res, next) => {
       }
   });
 });
-
 
 
 //读取代码文件并返回给前端显示
@@ -138,5 +198,14 @@ router.post('/code',(req,res,next)=>{
 });
 
 
+//返回某个特定visitID下的全部动作信息
+router.post('/actionDetails',(req,res,next)=>{
+    var {visitID}=req.body;
+    visitID=parseInt(visitID);
+    User.getActionDetails('123',visitID).then((data)=>{
+        //logger.info(data);
+        res.json({actionDetails:data});
+    }).catch(()=>{});
+});
 
 module.exports = router;

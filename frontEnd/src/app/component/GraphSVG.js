@@ -311,8 +311,8 @@ class GraphSVG extends React.Component{
         window.layer.load(1, {shade: [0.4,'#fff']});
         $.ajax({
             type:"POST",
-            //url:"http://localhost:3001/data",
-            url:"/data",
+            url:"http://localhost:3001/data",
+            //url:"/data",
             data:{edgeIn:edgeIn,pointIn:pointIn,globalIn:globalIn,sName:start_index,eName:end_index,algo:window.algo},
             success: function(json){
                 //console.log(_name);
@@ -327,10 +327,6 @@ class GraphSVG extends React.Component{
                 for(var i=0;i<stepData.steps.length-1;i++){  //暂未搞懂为什么多了一条动作？？？
                     //得到该动作对应帧的编号
                     var stepTemp=stepData.steps[i].split('\t')[3];    
-                    if(stepData.steps[i].split('\t')[1].split('(')[0]==="Question"){ //question动作的帧编号位置不同!
-                        stepTemp=stepData.steps[i].split('\t')[7];
-                    }
-
                     //将该动作编号纳入帧编号
                     if(stepTemp in actionStep)
                         actionStep[stepTemp].push(i);
@@ -428,8 +424,8 @@ class GraphSVG extends React.Component{
                     var codeName="code"+param+".txt";
                     $.ajax({
                         type:"POST",
-                        //url:"http://localhost:3001/code",
-                        url:"/code",
+                        url:"http://localhost:3001/code",
+                        //url:"/code",
                         data:{codeName:codeName},
                         success: function(code){
                         that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???
@@ -444,22 +440,25 @@ class GraphSVG extends React.Component{
                     layer.msg(msg, {time: this.state.speed *3000 +70});   
                 }
                 else if(step.types[i]==="Question" && window.question){
-                    let que = step.infos[i][2];
+                    let actionID=step.infos[i][0];
+                    let queType=step.infos[i][1].split('(')[1].split(',')[0];       //问题类型
+                    let que=step.infos[i][1].split('(')[1].split(',')[1];        //que对应问题的内容
                     if(que[0]==="*")                    //打个补丁，针对dijkstra提问为：*1*在本次循环后到起点的距离为？　的情况
                     {
                        que=que.replace(/\*/g,"");
                        que=que.replace(que[0],_name[que[0]]);
                     }
-                    let ans = step.infos[i][3];   
+
+                    let ans = step.infos[i][1].split('(')[1].split(',')[2];     //ans对应动作中给出的答案 
                     if(ans[0]==="*"){                    //标准答案，返回的是 *2* 类型
                         ans = ans.replace(/\*/g, "");
                         ans = _name[ans];
-                        return this.ask(que, ans);   
+                        return this.ask(que, ans, queType,actionID);   
                     }
-                    else                                //答案不只一个地点(默认１０个和以内),数字转化为文字路径
+                    else                                //答案不只一个地点(默认10个和以内),数字转化为文字路径
                     {
                         if(Object.is(window.algo,"dijkstra"))      //dj数字答案直接返回
-                            return this.ask(que,ans);
+                            return this.ask(que,ans, queType,actionID);
                         let pathNum=parseInt(ans);
                         let path_num=[];
                         let ans_length=ans.length;
@@ -481,7 +480,7 @@ class GraphSVG extends React.Component{
                                 path_str=path_str+_name[path_num[i]]+"->";
 
                         }
-                        return this.ask(que,path_str);
+                        return this.ask(que,path_str, queType,actionID);
                     }
                  
                 }
@@ -498,8 +497,7 @@ class GraphSVG extends React.Component{
                     let info='';  //将信息（不等式）置空
                     let name=_name[idx];   //点名
                     S_NODE_INFO.set(name,info);
-                }
-                
+                }     
             }
 
             //对一帧中的各元素统一进行刷新
@@ -613,24 +611,36 @@ class GraphSVG extends React.Component{
     }
 
     //提问
-    ask(que, msg){             //msg是标准答案(转换后的)
+    ask(que, msg,type,actionID){             //msg是标准答案(转换后的)
         clearTimeout(window.timer);
         let that = this;
         window.layer.prompt({title: que}, function(text, index){
             layer.closeAll();
+            var visitID=-1;
+            //答对答错都要保存结果
+            $.ajax({                      //需要先从动作表获得最大visitID(因为可能取消了问题而不保存在que表中)
+                type:"GET",
+                url:'http://localhost:3001/getVisitID',
+                //url:"/collect",
+                data:{},
+                success: function(json){
+                    visitID=parseInt(json.visitID);
+                    $.ajax({                            //ajax是异步的，为了保持同步，保存题目需要写在查询visitID的回调函数中
+                        type:"POST",
+                        url:'http://localhost:3001/collectQue',
+                        //url:"/collect",
+                        data:{que:que,ans:text,msg:msg,type:type,visitID:visitID,actionID:actionID},
+                        success: function(json){
+                        },
+                        error: function(){
+                        }
+                    });
+                },
+                error: function(){
+                }
+            });
             if(text!=msg){
                 window.layer.msg('正确答案：'+msg, {time: 1000});
-                ///////////////////////////////////////////////////////
-                $.ajax({
-                    type:"POST",
-                    url:"/collect",
-                    data:{que:que,ans:text,msg:msg},
-                    success: function(json){
-                    },
-                    error: function(){
-                    }
-                });
-        ///////////////////////////////////////////////////////
                 setTimeout(()=>{
                     that.animate();
                 }, 1100);
@@ -721,8 +731,8 @@ class GraphSVG extends React.Component{
             var codeName="code"+param+".txt";
             $.ajax({
                     type:"POST",
-                    //url:"http://localhost:3001/code",
-                    url:"/code",
+                    url:"http://localhost:3001/code",
+                    //url:"/code",
                     data:{codeName:codeName},
                     success: function(code){
                     that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???
@@ -840,8 +850,8 @@ class GraphSVG extends React.Component{
             var codeName="code"+param+".txt";
             $.ajax({
                     type:"POST",
-                    //url:"http://localhost:3001/code",
-                    url:"/code",
+                    url:"http://localhost:3001/code",
+                    //url:"/code",
                     data:{codeName:codeName},
                     success: function(code){
                     that.codeChangeHandler(code);   //不能用this，因为ajax中的this已经不在代表外面的组件了!!!???

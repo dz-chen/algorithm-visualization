@@ -1,4 +1,5 @@
 import MyMenu from "../MyMenu.js";
+import {Link} from 'react-router-dom';
 
 //let layer = require("./app/layer/layer.js");
 
@@ -54,6 +55,12 @@ class Sidebar extends React.Component{
 					</div>
 					<div id="confirm">
 						<button onClick={this.confirmClick.bind(this)}>确定</button>
+					</div>
+					<div id="reports">
+					<Link id="mlink" to="reports">
+					<button onClick={()=>{}}>报表</button>
+					</Link>
+						
 					</div>
 					<div id="info">
 						<button >退出</button>

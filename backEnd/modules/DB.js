@@ -12,6 +12,7 @@ const query = sql => new Promise((resolve, reject) => {
             return;
         }
         connection.query(sql, (error, results, fields) => {
+            //logger.info(sql);
             connection.release();
             if (err) {
                 reject(err);
